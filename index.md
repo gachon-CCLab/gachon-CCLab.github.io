@@ -69,7 +69,7 @@ $ pip install fedops
   Page(s)={47212 - 47222}
   DOI={10.1109/ACCESS.2023.3275439}
   year={2023}
-}
+  }
 ```
 
 ## Support
