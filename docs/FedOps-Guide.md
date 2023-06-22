@@ -1,27 +1,27 @@
-# **FedOps Architecture**
-
-![](./img/architecture.PNG)
-
-FedOps has five key features:
-
-1. FLScalize: It simplifies the application of data and models in a FL environment by leveraging Flower's Client and Server.
-
-2.  the manager oversees and manages the real-time FL progress of both clients and server
-3. Contribution Evaluation and Client Selection processes incentivize individual clients through a BCFL based on their performance.
-
-4. the CI/CD/CFL system integrates with a Code Repo, 
-enabling code deployment to multiple clients and servers for continuous or periodic federated learning
-
-5. the FL dashboard is available for monitoring and observing the lifecycle of FL clients and server
+# **FedOps Guide**
 
 -----
 ![FedOps work](./img/architecture2.PNG)
+We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
+Users can create FL tasks and register task ID in the clients.
+
+Once the user select the clients that participate in the FL round, the user can run FL task and that deploys FL server.
+
+As FL is performed, the user monitors local and global model performances and manage/download global model through the web interface.
+
+At the client level, the clients can monitor own data status and performance with WandB or ELK.
 
 ## 1. Create and Manage FL Task
 ![](./img/demo1.PNG)
 ![](./img/demo1-1.PNG)
 
-To get started, create your FL Task in the FedOps web interface. Enter the title, description, and tags for your Task. Additionally, provide the address of the FL server Git repository that you have created. Once registered, it is not cumbersome to upload the code file to the web because you can separately manage the FL server code only in Git. This will allow the FL server to be deployed and run in our server environment.
+To get started, create your FL Task in the FedOps web interface.
+Enter the title, description, and tags for your Task. 
+
+Additionally, provide the address of the FL server Git repository that you have created. 
+Once registered, it is not cumbersome to upload the code file to the web because you can separately manage the FL server code only in Git. 
+
+This will allow the FL server to be deployed and run in CCL server environment.
 
 ## 2. Register FL clients
 ![](./img/demo2.PNG)
