@@ -1,7 +1,7 @@
 ---
 layout: default
 title: What is FedOps
-nav_order: 1
+nav_order: 2
 ---
 
 # What is FedOps?
