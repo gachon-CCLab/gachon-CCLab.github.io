@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: FedOps Docs
-description: A Jekyll theme for documentation
+description: Documents of FedOps
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://just-the-docs.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://strong-troll.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 repository: just-the-docs/just-the-docs # for github-metadata
 
 permalink: pretty
@@ -101,8 +101,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+  "FedOps on GitHub":
+    - "https://github.com/gachon-CCLab/FedOps"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
