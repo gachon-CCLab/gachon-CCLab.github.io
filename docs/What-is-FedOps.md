@@ -1,4 +1,6 @@
-# **FedOps: Federated Learning Lifecycle Operations Management**
+# What is FedOps?
+
+## **FedOps: Federated Learning Lifecycle Operations Management**
 
 ## Motivation
 
