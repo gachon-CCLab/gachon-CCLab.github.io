@@ -1,10 +1,12 @@
-# FedOps: Federated Learning Lifecycle Operations Management
+# **FedOps: Federated Learning Lifecycle Operations Management**
 
-# **Motivation**
+## Motivation
 
 
  Need a platform that can manage FL operations by extending the concept of MLOps
 
+
+![FedOps_Overview](./img/FedOps_Overview.PNG)
 
   Q1. How can AI/ML Project be easily applied to FL?
 
@@ -16,4 +18,4 @@
 
   Q3. How can we manage the client/server lifecycle for FL operations?
 
-![FedOps_Overview](https://strong-troll.github.io/docs/img/FedOps_Overview.png)
+## FedOps Architecture
