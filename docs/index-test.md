@@ -70,10 +70,10 @@ end
 ###### [](#header-6)Header 6
 
 [This is a very long link which wraps and therefore doesn't overflow
-even when it comes at the beginning](..) of the line.
+even when it comes at the beginning]() of the line.
 
 - [This is a very long link which wraps and therefore doesn't overflow the line
-  when used first in an item ](..) in a list.
+  when used first in an item ]() in a list.
 
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
@@ -184,11 +184,11 @@ Some text
 
 ### Small image
 
-![](../../assets/images/small-image.jpg)
+![](../assets/images/small-image.jpg)
 
 ### Large image
 
-![](../../assets/images/large-image.jpg)
+![](../assets/images/large-image.jpg)
 
 "[Wroclaw University Library digitizing rare archival texts](https://www.flickr.com/photos/97810305@N08/9401451269)" by [j_cadmus](https://www.flickr.com/photos/97810305@N08) is marked with [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse).
 
