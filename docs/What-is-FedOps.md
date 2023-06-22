@@ -1,3 +1,9 @@
+---
+layout: default
+title: What is FedOps
+nav_order: 1
+---
+
 # What is FedOps?
 
 ## **FedOps: Federated Learning Lifecycle Operations Management**
