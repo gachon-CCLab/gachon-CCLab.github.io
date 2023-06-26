@@ -118,6 +118,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 nav_external_links:
   - title: FedOps on GitHub
     url: https://github.com/gachon-CCLab/FedOps
+  - title: Paper
+    url: https://ieeexplore.ieee.org/document/10122960
 
 # Footer content
 # appears at the bottom of every page's main content
