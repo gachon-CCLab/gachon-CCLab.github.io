@@ -11,11 +11,23 @@ nav_order: 4
 We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
 Users can create FL tasks and register task ID in the clients.
 
-Once the user select the clients that participate in the FL round, the user can run FL task and that deploys FL server.
+Once the user select the clients that participate in the FL round, the user can run FL task and that deploys FL server.
 
 As FL is performed, the user monitors local and global model performances and manage/download global model through the web interface.
 
 At the client level, the clients can monitor own data status and performance with WandB or ELK.
+
+## 1. Colne and Install the FedOps
+You clone the FedOps git address (https://github.com/gachon-CCLab/FedOps) and install the FedOps Library
+```
+$ pip install fedops
+```
+You use the cross-silo project example at https://github.com/gachon-CCLab/FedOps/tree/main/real_device/cross_silo 
+and reconfigure custom client and server(fl_client & fl_server) for your FL tasks.
+
+After you finish the local developing/debugging of your FL task project using FedOps library,
+you can now deploy it into the FL real-world project.
+Finally, create the FL server code(using fl_server) for your FL task in your git repository, then manage the FL server code in that repository.(e.g., successfully run the example  https://github.com/gachon-CCLab/FedOps/tree/main/real_device/cross_silo/fl_server)
 
 ## 1. Create and Manage FL Task
 ![](./img/demo1.PNG)
