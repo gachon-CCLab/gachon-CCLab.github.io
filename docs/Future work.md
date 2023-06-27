@@ -6,4 +6,4 @@ nav_order: 5
 
 # **FedOps Architecture**
 
-![](./img/Future_Work.PNG)
+![futuer work](./img/Future_Work.PNG)
