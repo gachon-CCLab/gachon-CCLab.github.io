@@ -7,7 +7,7 @@ nav_order: 4
 # **FedOps Guide**
 
 -----
-![](./img/architecture2.PNG)
+![architecture](./img/architecture2.PNG)
 We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
 Users can create FL tasks and register task ID in the clients.
 
@@ -30,8 +30,8 @@ you can now deploy it into the FL real-world project.
 Finally, create the FL server code(using fl_server) for your FL task in your git repository, then manage the FL server code in that repository.(e.g., successfully run the example  https://github.com/gachon-CCLab/FedOps/tree/main/real_device/cross_silo/fl_server)
 
 ## 2. Create and Manage FL Task
-![](./img/demo1.PNG)
-![](./img/demo1-1.PNG)
+![demo1](./img/demo1.PNG)
+![demo1-1](./img/demo1-1.PNG)
 
 To get started, create your FL Task in the FedOps web interface.
 Enter the title, description, and tags for your Task. 
@@ -42,7 +42,7 @@ Once registered, it is not cumbersome to upload the code file to the web because
 This will allow the FL server to be deployed and run in CCL server environment.
 
 ## 3. Register FL clients
-![](./img/demo2.PNG)
+![demo2](./img/demo2.PNG)
 
 Once your FL Task is created, it will be assigned a unique task ID. In order to register a client in this FL task, the client’s config file needs to be updated with the assigned task ID and the user's WandB information for client monitoring. And run the client and client manager. In this way, the client is registered in the FL task.
 
