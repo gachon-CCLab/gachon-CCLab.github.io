@@ -7,7 +7,7 @@ nav_order: 4
 # **FedOps Guide**
 
 -----
-![FedOps work](./img/architecture2.PNG)
+![](./img/architecture2.PNG)
 We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
 Users can create FL tasks and register task ID in the clients.
 

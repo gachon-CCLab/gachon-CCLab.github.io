@@ -6,4 +6,4 @@ nav_order: 3
 
 # **FedOps Architecture**
 
-![FedOps Architecture](./img/architecture.PNG)
+![](./img/architecture.PNG)
