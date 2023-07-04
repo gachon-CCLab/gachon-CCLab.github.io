@@ -19,3 +19,6 @@ FedOps has five key features:
 enabling code deployment to multiple clients and servers for continuous or periodic federated learning
 
 5. the FL dashboard is available for monitoring and observing the lifecycle of FL clients and server
+
+# **FedOps Code Architecture**
+![](./img/code_architecture.PNG)
