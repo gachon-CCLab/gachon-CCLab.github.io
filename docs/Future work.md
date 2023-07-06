@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Future work
-nav_order: 5
+nav_order: 7
 ---
 
 # **FedOps Architecture**

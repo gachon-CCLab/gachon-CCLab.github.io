@@ -1,10 +1,10 @@
 ---
 layout: default
 title: User Guide
-nav_order: 4
+nav_order: 5
 # h2부터 h5까지 제목을 표시합니다
 toc_min_heading_level: 2
-toc_max_heading_level: 5
+toc_max_heading_level: 7
 ---
 
 # **FedOps Guide**
