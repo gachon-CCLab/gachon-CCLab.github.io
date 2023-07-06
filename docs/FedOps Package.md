@@ -29,7 +29,6 @@ class fedops.client.app.FLClientTask
 ```
 `Register the FL Task to FedOps Client`
 
-<br>
 
 ```python
     async def fl_client_start()
@@ -38,14 +37,12 @@ class fedops.client.app.FLClientTask
 
 - The reason for processing asynchronously is that the client is configured so that FL can be performed without affecting it under the assumption that the client continues to perform tasks such as data collection and analysis.
 
-<br>
  
 ```python
     def start()
 ```
 `API that communicates with the Client Manager, delivers the status of the Client, receives an FL start trigger, and participates in the FL task round.`
 
-<br>
 
 ```python
         @self.app.get('/online')
@@ -55,7 +52,6 @@ class fedops.client.app.FLClientTask
 - **RETURN**
   - self.status: Client's information(FL_task_id, FL_client_num, FL_client_mac, FL_client_online, FL_client_start, FL_client_fail, FL_server_IP, FL_next_gl_model)
 
-<br>
 
 ```python
         @self.app.post("/start")
@@ -66,13 +62,62 @@ class fedops.client.app.FLClientTask
   - BackgroundTasks: This is useful for operations that need to happen after a request, but that the client doesn't really have to be waiting for the operation to complete before receiving the response.
   - client_utils.ManagerData: IP of server to connect with FL server, client mac address for unique value of client
 
-<br>
 
 ### Client API
+#### Client Manager API
 ```python
 class fedops.client.client_api.ClientManagerAPI
 ```
-`Register the FL Task to FedOps Client`
+`API for communication with client manager`
+
+```python
+    def get_info()
+```
+`Get the client manager information`
+
+```python
+    def get_client_out()
+```
+`Client out due to error or normal FL termination`
+
+```python
+    def get_train_fin()
+```
+`End of client local training`
+
+```python
+    def get_train_fail()
+```
+`Fail Client local training with error`
+
+<br>
+
+#### Server Manager API
+
+```python
+class fedops.client.client_api.ClientServerAPI
+```
+`Get FL server pod ip and port that assigned to the FL task`
+
+```python
+    def get_port()
+```
+`G`
+
+```python
+    def get_client_out()
+```
+`C`
+
+```python
+    def get_train_fin()
+```
+`E`
+
+```python
+    def get_train_fail()
+```
+`F`
 
 
 

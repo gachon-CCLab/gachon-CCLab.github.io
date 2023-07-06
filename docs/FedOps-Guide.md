@@ -2,9 +2,6 @@
 layout: default
 title: User Guide
 nav_order: 5
-# h2부터 h5까지 제목을 표시합니다
-toc_min_heading_level: 2
-toc_max_heading_level: 7
 ---
 
 # **FedOps Guide**
@@ -20,7 +17,7 @@ As FL is performed, the user monitors local and global model performances and ma
 
 At the client level, the clients can monitor own data status and performance with WandB or ELK.
 
-## pre preparation - Colne and Install the FedOps
+## Preparation - Clone and Install the FedOps
 You clone the FedOps git address (https://github.com/gachon-CCLab/FedOps) and install the FedOps Library
 ```
 $ pip install fedops
