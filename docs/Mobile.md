@@ -1,6 +1,6 @@
 ---
 layout: default
-title: User Mobile
+title: Mobile
 nav_order: 6
 # h2부터 h5까지 제목을 표시합니다
 toc_min_heading_level: 2
@@ -26,7 +26,7 @@ In the Flutter environment, we can use native(Android and IoS) codes or function
 
  
 
-![Flutter App](./img/Flutter_App.PNG)
+![Flutter App](./img/Flutter_App.png)
 
 
 Flower Mobile client has 3 main tasks:
@@ -85,4 +85,4 @@ Prepare for release.
 4. ConnectWithServer planned to do with GRPC Dart extension.
 5. Train, GetEvaluations and GetResults methods will be in the native side and can get results by FlutterMethodChannel and StreamChannel. 
     
-![FedOps Flutter SDK](./img/FedOps_Fluter_SDK.PNG)
+![FedOps Flutter SDK](./img/FedOps_Fluter_SDK.png)
