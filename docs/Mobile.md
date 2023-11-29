@@ -4,10 +4,10 @@ title: FedOps Mobile
 nav_order: 5
 ---
 
-# Flower Flutter Extension
+# FedOps Flutter Extension using Flower
 - **`FedOps Flutter Git`: https://github.com/gachon-CCLab/FedOps/tree/main/real_device/cross_device/fed_ops_flutter**
 
-# Proposal for Flower Flutter extension
+# Proposal for FedOps Flutter extension
 
 Technologies to use in extension development.
 
@@ -23,10 +23,10 @@ In the Flutter environment, we can use native(Android and IoS) codes or function
 
  
 
-![Flutter App](./img/Flutter_App.png)
+![Flutter App](../img/Flutter_App.png)
 
 
-Flower Mobile client has 3 main tasks:
+FedOps Mobile client has 3 main tasks:
 
 1. on-device training.
 2. on-device inference.
@@ -46,15 +46,15 @@ The tasks mentioned above can be implemented easily without extra requirements.
 
 Step 1.
 
-Implementing Flutter Method Channel to use on-device training in the Flutter environment(from this step we use FlowerFlutter as what we are doing)
+Implementing Flutter Method Channel to use on-device training in the Flutter environment(from this step we use FedOps Flutter as what we are doing)
 
 Step 2. 
 
-Adding existing on-device inference functionality to FlowerFlutter 
+Adding existing on-device inference functionality to FedOps lutter 
 
 Step 3.
 
-Adding gRPC methods as default connection methods to FlowerFlutter
+Adding gRPC methods as default connection methods to FedOps Flutter
 
 Step 4.
 
@@ -62,7 +62,7 @@ Implementing default load model and dataset methods
 
 Step 5.
 
-Test the FlowerFlutter with custom models and datasets, comparing the performance with Flower Android and Flower IoS
+Test the FedOps Flutter with custom models and datasets, comparing the performance with Flower Android and Flower IoS
 
 Step 6. 
 
@@ -82,4 +82,4 @@ Prepare for release.
 4. ConnectWithServer planned to do with GRPC Dart extension.
 5. Train, GetEvaluations and GetResults methods will be in the native side and can get results by FlutterMethodChannel and StreamChannel. 
     
-![FedOps Flutter SDK](./img/FedOps_Fluter_SDK.png)
+![FedOps Flutter SDK](../img/FedOps_Fluter_SDK.png)

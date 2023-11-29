@@ -14,13 +14,13 @@ nav_order: 2
  Need a platform that can manage FL operations by extending the concept of MLOps
 
 
-![FedOps_Overview](./img/FedOps_Overview.PNG)
+![FedOps_Overview](../img/FedOps_Overview.PNG)
 
   Q1. How can AI/ML Project be easily applied to FL?
 
 
 
-  Q2. How to deploy and run numerous clients in FL       environment like MLOps?
+  Q2. How to deploy and run numerous clients in FL environment like MLOps?
 
 
 
