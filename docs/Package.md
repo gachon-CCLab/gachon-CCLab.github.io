@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FedOps Package
-nav_order: 4
+nav_order: 8
 # h2부터 h5까지 제목을 표시합니다
 toc_min_heading_level: 2
 toc_max_heading_level: 5

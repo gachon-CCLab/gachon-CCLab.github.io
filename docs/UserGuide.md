@@ -1,10 +1,10 @@
 ---
 layout: default
 title: User Guide
-nav_order: 5
+nav_order: 7
 ---
 
-# **FedOps Guide**
+# FedOps User Guide
 
 -----
 ![architecture](./img/architecture2.PNG)

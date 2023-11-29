@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Mobile
-nav_order: 6
+title: FedOps Mobile
+nav_order: 5
 ---
 
 # Flower Flutter Extension

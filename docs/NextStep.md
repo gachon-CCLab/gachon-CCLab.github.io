@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Future work
-nav_order: 7
+title: FedOps Next Step
+nav_order: 9
 ---
 
-# **FedOps Architecture**
+# FedOps Next Step
 
 ![futuer work](./img/Future_Work.PNG)
