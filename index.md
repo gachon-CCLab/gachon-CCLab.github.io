@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 1
+permaling: /
+---
+
 # FedOps: Federated Learning Lifecycle Operations Management Platform
   
 <p align="center">
