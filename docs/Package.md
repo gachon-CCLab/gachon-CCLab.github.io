@@ -21,6 +21,14 @@ toc_max_heading_level: 5
   - [app](#app)
   - [server_api](#server_api)
   - [server_utils](#server_utils)
+
+- [Simulation](#simulation)
+  - [app](#app)
+  - [fl_strategy](#fl_strategy)
+    - [aggregation](#aggregation)
+    - [selection](#selection)
+    - [client](#client)
+    - [server](#server)
   
 ## Client
 ### App

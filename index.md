@@ -4,11 +4,13 @@ title: Home
 nav_order: 1
 permaling: /
 ---
-<div align="center">
- <img src="../img/fedops_logo_1.png" width="180px">
-</div>
+
 
 # FedOps: Federated Learning Lifecycle Operations Management Platform
+
+<div align="center">
+ <img src="./docs/img/fedops_logo.png" width="180px">
+</div>
   
 <p align="center">
     <a href="http://ccljhub.gachon.ac.kr:40020/">FedOps</a> |
