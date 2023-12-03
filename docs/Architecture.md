@@ -21,4 +21,4 @@ enabling code deployment to multiple clients and servers for continuous or perio
 5. the FL dashboard is available for monitoring and observing the lifecycle of FL clients and server
 
 # **FedOps Code Architecture**
-![FedOps Code Architecture](../img/code_architecture.PNG)
+![FedOps Code Architecture](../img/code_architecture.png)
