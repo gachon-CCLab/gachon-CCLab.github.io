@@ -4,6 +4,9 @@ title: Home
 nav_order: 1
 permaling: /
 ---
+<div align="center">
+ <img src="../img/fedops_logo_1.png" width="180px">
+</div>
 
 # FedOps: Federated Learning Lifecycle Operations Management Platform
   
