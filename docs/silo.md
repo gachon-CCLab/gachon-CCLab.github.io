@@ -24,4 +24,5 @@ nav_order: 4
 
 
 ## FedOps Silo Scenario
-![FedOps Silo Scenario](../img/silo_scenario.png)
+![FedOps Silo Scenario](../img/silo_scenario.png)<br>
+- [FedOps Silo Guide](https://gachon-cclab.github.io/docs/user-guide/silo-guide/)

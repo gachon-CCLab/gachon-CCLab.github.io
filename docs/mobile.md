@@ -16,4 +16,5 @@ nav_order: 5
 
 
 ## FedOps Mobile Scenario
-![FedOps Mobile Scenario](../img/mobile_scenario.png)
+![FedOps Mobile Scenario](../img/mobile_scenario.png)<br>
+- [FedOps Mobile Guide](https://gachon-cclab.github.io/docs/user-guide/mobile-guide/)

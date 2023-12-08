@@ -25,3 +25,6 @@ nav_order: 6
 
 
 - Monitor model performance in real time
+
+
+- [FedOps Simulation Guide](https://github.com/gachon-CCLab/FedOps/tree/main/simulation/examples)
