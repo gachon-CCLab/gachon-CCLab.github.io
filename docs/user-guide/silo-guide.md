@@ -8,11 +8,11 @@ nav_order: 1
 # FedOps Silo User Guide
 
 -----
-![architecture](../img/architecture2.PNG)
+![architecture](../img/architecture2.PNG) <br>
 We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
 Users can create FL tasks and register task ID in the clients.
 
-Once the user select the clients that participate in the FL round, the user can run FL task and that deploys FL server.
+Once the user select the Silo clients that participate in the FL round, the user can run FL task and that deploys FL server.
 
 As FL is performed, the user monitors local and global model performances and manage/download global model through the web interface.
 
