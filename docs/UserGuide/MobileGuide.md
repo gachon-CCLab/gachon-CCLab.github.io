@@ -1,10 +1,11 @@
 ---
 layout: default
-title: User Guide
-nav_order: 8
+title: Mobile Guide
+parent: UserGuide
+nav_order: 2
 ---
 
-# FedOps User Guide
+# FedOps Mobile User Guide
 
 -----
 ![architecture](../img/architecture2.PNG)
