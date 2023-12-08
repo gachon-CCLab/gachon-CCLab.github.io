@@ -43,7 +43,7 @@ At the client level, the clients can monitor own data status and performance wit
 
 ## 1. Create and Manage FL Task
 ![demo1-1](../img/guide/silo/demo1-1.PNG)
-<img src="../img/guide/silo/demo1-2.PNG" width="300" height="400">
+![demo1-2](../img/guide/silo/demo1-2.PNG)
 
 - Enter the title, description, and client type for your Task. 
 
