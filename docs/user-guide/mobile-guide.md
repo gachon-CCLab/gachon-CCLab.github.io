@@ -8,7 +8,7 @@ nav_order: 2
 # FedOps Mobile User Guide
 
 -----
-![architecture](../img/mobile_scenario.png) <br>
+![architecture](../../img/mobile_scenario.png) <br>
 
 We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
 

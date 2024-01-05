@@ -8,7 +8,7 @@ nav_order: 1
 # FedOps Silo User Guide
 
 -----
-![architecture](../img/architecture2.PNG) <br>
+![architecture](../../img/architecture2.PNG) <br>
 We developed a FedOps web service to manage the lifecycle operations of FL on real devices.
 Users can create FL tasks and register task ID in the clients.
 
@@ -42,8 +42,8 @@ At the client level, the clients can monitor own data status and performance wit
 
 
 ## 1. Create and Manage FL Task
-![demo1-1](../img/guide/silo/demo1-1.PNG)
-![demo1-2](../img/guide/silo/demo1-2.PNG)
+![demo1-1](../../img/guide/silo/demo1-1.PNG)
+![demo1-2](../../img/guide/silo/demo1-2.PNG)
 
 - Enter the title, description, and client type for your Task. 
 
@@ -56,7 +56,7 @@ At the client level, the clients can monitor own data status and performance wit
 
 
 ## 2. Register FL clients
-![demo2-1](../img/guide/silo/demo2-1.PNG)
+![demo2-1](../../img/guide/silo/demo2-1.PNG)
 
 - Once your FL Task is created, it will be assigned a unique task ID. 
 
@@ -66,7 +66,7 @@ At the client level, the clients can monitor own data status and performance wit
 
 <br>
 
-![demo2-2](../img/guide/silo/demo2-2.PNG)
+![demo2-2](../../img/guide/silo/demo2-2.PNG)
 - When you run the client and client manager, the client is registered as above.
 
 - Run the client and client manager
@@ -91,7 +91,7 @@ At the client level, the clients can monitor own data status and performance wit
 
 
 ## 3. Select FL clients and Run FL task
-![demo3](../img/guide/silo/demo3.PNG)
+![demo3](../../img/guide/silo/demo3.PNG)
 
 - After selecting the client, click the `FL Start` button.
 - This deploy and execute the FL server code that you previously set up in the server repository. 
@@ -99,7 +99,7 @@ At the client level, the clients can monitor own data status and performance wit
 
 
 ## 4. FL lifecycle Monitoring by FedOps Web
-![demo4-1](../img/guide/silo/demo4-1.PNG)
+![demo4-1](../../img/guide/silo/demo4-1.PNG)
 
 - FedOps provides lifecycle management for FL tasks. 
 - You can monitor the performance of the global/local models and track the client's system resource usage based on the model version. 
@@ -107,7 +107,7 @@ At the client level, the clients can monitor own data status and performance wit
 
 <br>
 
-![demo4-2](../img/guide/silo/demo4-2.PNG)
+![demo4-2](../../img/guide/silo/demo4-2.PNG)
 
 - You can save and manage the global models according to different versions.
 
@@ -115,6 +115,6 @@ At the client level, the clients can monitor own data status and performance wit
 
 
 ## 5. Client Lifecycle Monitoring
-![demo5](../img/guide/silo/demo5.PNG)
+![demo5](../../img/guide/silo/demo5.PNG)
 
  - To monitor the performance of the client's local model and the status of the client's data, you can check the information using the WandB that you set up earlier.
