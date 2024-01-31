@@ -20,7 +20,7 @@ Q3. How should we manage the lifecycle of clients and servers?
 
 We propose the following solutions to address these problems.
 
-![FedOps_Architecture](./img/fedops_architecture.png)
+![FedOps_Architecture](../img/fedops_architecture.png)
 
 A1. Utilize a flow-based code structure to seamlessly migrate users' models and data to the federated learning environment without direct manipulation.
 
@@ -36,4 +36,4 @@ FedOps is easy to develop and deploy.
 
 FedOps, being an extended platform from traditional MLOps, allows for immediate application without requiring modifications to existing models. Moreover, deploying both clients and servers through Git enables easy expansion to actual devices. Unlike traditional Federated Learning MLOps lacking robust functionality to monitor the lifecycle of clients and servers, FedOps provides a comprehensive view of the lifecycle of all entities participating in federated learning through client and server managers. This significant difference and advantage allow monitoring the lifecycle of actual devices, addressing issues that arise during training, and facilitating easy problem resolution.
 
-![FedOps_Overview](./img/FedOps_Overview.PNG)
+![FedOps_Overview](../img/FedOps_Overview.PNG)
