@@ -1,3 +1,8 @@
+---
+layout: default
+title: FedOps References
+nav_order: 9
+---
 
 ## **FedOps Federated Learning Research**
 
