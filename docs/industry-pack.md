@@ -4,7 +4,7 @@ title: FedOps Industry Pack
 nav_order: 8
 ---
 
-# FedOps Indutry Pack
+# FedOps Industry Pack
 FedOps can actually be used in many industries and provides usecases.
 
 ## Healthcare Domain
