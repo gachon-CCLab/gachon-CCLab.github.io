@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FedOps XAI
-nav_order: 10
+nav_order: 8
 has_children: true
 permalink: docs/FedOps-XAI
 ---

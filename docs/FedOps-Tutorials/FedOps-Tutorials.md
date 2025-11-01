@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FedOps Tutorials
-nav_order: 10
+nav_order: 4
 has_children: true
 permalink: docs/FedOps-Tutorials
 ---

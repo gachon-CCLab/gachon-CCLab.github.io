@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FedOps Aggregation method
-nav_order: 12
+nav_order: 6
 has_children: true
 permalink: docs/FedOps-Aggregation-method
 ---
