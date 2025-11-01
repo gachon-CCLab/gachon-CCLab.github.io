@@ -40,7 +40,7 @@ git clone https://github.com/gachon-CCLab/FedOps.git \
 
 1. Create Task: The task name is required (e.g., **xaitest**). Since this instance belongs to a general machine learning or deep learning task, select **AI** and ****set **XAI options** in enabled. Keep all subsequent options as default, and finally, choose **FedAvg** as the federated aggregation strategy.
 
-![image.png](../../img/How-to-use-XAI/image(1).png)
+![image.png](../img/How-to-use-XAI/image(1).png)
 
 **XAI (Only for Image data):** Select **Enabled**.
 
