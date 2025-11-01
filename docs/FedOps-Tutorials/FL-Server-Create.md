@@ -22,7 +22,7 @@ nav_order: 1
 
 1. To create an FL server, first create a task in the FedOps web UI.
     
-    ![image.png](../../img/FedOp-Tutorials/FL-Server-Create/image-(1).png)
+    ![image.png](../../img/FedOp-Tutorials/FL-Server-Create/image(1).png)
     
     1. Click **Task** on the top navigation bar to open the Task management page.
     2. Click the **+** button in the top-right corner to open the create-task page.
