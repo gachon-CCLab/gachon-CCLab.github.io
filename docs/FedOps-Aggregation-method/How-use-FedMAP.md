@@ -11,18 +11,18 @@ parent: FedOps Aggregation method
 ## Baseline Project Structure
 
 ```
-- **FedOps/multimodal/Usecases/Facebook_AI_benchmark**
-    - **dataset**/
-    - **all_in_one_dataset**/
-    - **conf**/
-        - **config.yaml** (# includes metadata and configurations)
-    - ***client_main.py*** (# main client file you need to run in separate terminal)
-    - ***client_manager_main.py*** (# client manager file, run this too in a terminal))
-    - ***data_preparation.py***
-    - ***flclient_patch_task.py*** 
-    - ***models.py*** 
-    - ***requirements.txt*** (#server side requirements file)
-    - ***server_main.py*** (# main server side file, dont need to run this)
+- FedOps/multimodal/Usecases/Facebook_AI_benchmark
+    - dataset/
+    - all_in_one_dataset/
+    - conf/
+        - config.yaml (# includes metadata and configurations)
+    - client_main.py (# main client file you need to run in separate terminal)
+    - client_manager_main.py (# client manager file, run this too in a terminal)
+    - data_preparation.py
+    - flclient_patch_task.py
+    - models.py
+    - requirements.txt (#server side requirements file)
+    - server_main.py (# main server side file, dont need to run this)
 
 ```
     
@@ -81,12 +81,12 @@ This will be helpful in retrieving exact client specific data from “all_in_one
 - Now update the dataset folders path in data_preparation.py file (set the **relative path from data_preparation.py)**. Find below lines.
 
 {: .highlight }
-💡  ```python
-    # ------------ Paths ------------
-    # Client-side layout (update path here)
-    BASE_DATASET_DIR = os.path.abspath("/dataset")          # contains client_1/, client_2/, ...
-    IMG_DIR = os.path.abspath("/all_in_one_dataset/img")    # all images live here
-    ```
+```python
+# ------------ Paths ------------
+# Client-side layout (update path here)
+BASE_DATASET_DIR = os.path.abspath("/dataset")          # contains client_1/, client_2/, ...
+IMG_DIR = os.path.abspath("/all_in_one_dataset/img")    # all images live here
+```
 
 
 
@@ -691,7 +691,6 @@ PY
 filenames with path as follows:
 
 {: .highlight }
-💡
 1. ***/app/code/server_main.py***
 2. ***/app/code/models.py***
 3. ***/app/code/data_preparation.py*** 
