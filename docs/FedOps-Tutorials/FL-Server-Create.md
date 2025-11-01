@@ -4,17 +4,21 @@ title: FL Server Create
 parent: FedOps Tutorials
 nav_order: 1
 ---
-<aside>
-💡
 
-This guide walks you through creating a task and running the FL Server using the MNIST example.
+# FL Server Create
 
-Differences from FedOps 1.1.2
+{: .note }
+> 💡 **Overview**
+>
+> This guide walks you through creating a task and running the FL Server using the MNIST example.
+>
+> **Differences from FedOps 1.1.2**
+>
+> 1. In 1.1.2, the FL server ran as a Kubernetes Job, so it terminated when an FL run finished, making post-run management and log inspection difficult. Code was managed via Git, which made debugging and fixes harder. In 1.2, the server runs as a Pod with dedicated resources for the FL server, making code management, debugging, and log inspection much easier.
+> 2. In 1.1.2, there were no management features for the FL server, so resource scaling and file browsing were not possible. In 1.2, you can scale resources, browse files, and execute commands, making server management easier.
+> 3. When creating a task, options are collected from the user and applied automatically, preventing typos and missing required fields in the initial config.
 
-1. In 1.1.2, the FL server ran as a Kubernetes Job, so it terminated when an FL run finished, making post-run management and log inspection difficult. Code was managed via Git, which made debugging and fixes harder. In 1.2, the server runs as a Pod with dedicated resources for the FL server, making code management, debugging, and log inspection much easier.
-2. In 1.1.2, there were no management features for the FL server, so resource scaling and file browsing were not possible. In 1.2, you can scale resources, browse files, and execute commands, making server management easier.
-3. When creating a task, options are collected from the user and applied automatically, preventing typos and missing required fields in the initial config.
-</aside>
+## Steps
 
 1. To create an FL server, first create a task in the FedOps web UI.
     
