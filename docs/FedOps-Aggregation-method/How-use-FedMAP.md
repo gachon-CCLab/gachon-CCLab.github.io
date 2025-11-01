@@ -66,10 +66,7 @@ pip install fedops==1.1.30.4
 ![image.png](../../img/How-to-use-FedMAP/image(1).png)
 
 {: .highlight }
-💡
-
-contains partitioned dataset info for each client (**client_0,client_1,client_2,client_3,and client_4**) . From here  you can decide which client data you have to use and then update **client_id**: in **conf/config.yaml**
-
+💡contains partitioned dataset info for each client (**client_0,client_1,client_2,client_3,and client_4**) . From here  you can decide which client data you have to use and then update **client_id**: in **conf/config.yaml**
 This will be helpful in retrieving exact client specific data from “all_in_one_dataset” folder .  
 
 
@@ -79,25 +76,17 @@ This will be helpful in retrieving exact client specific data from “all_in_one
 ![image.png](../../img/How-to-use-FedMAP/image(2).png)
 
 {: .highlight }
-💡
-
-all images live here.
-
-
-
-and please do update the path for the datasets as instructed below:
+💡all images live here. and please do update the path for the datasets as instructed below:
 
 - Now update the dataset folders path in data_preparation.py file (set the **relative path from data_preparation.py)**. Find below lines.
 
 {: .highlight }
-💡
-
-```python
-# ------------ Paths ------------
-# Client-side layout (update path here)
-BASE_DATASET_DIR = os.path.abspath("/dataset")          # contains client_1/, client_2/, ...
-IMG_DIR = os.path.abspath("/all_in_one_dataset/img")    # all images live here
-```
+💡  ```python
+    # ------------ Paths ------------
+    # Client-side layout (update path here)
+    BASE_DATASET_DIR = os.path.abspath("/dataset")          # contains client_1/, client_2/, ...
+    IMG_DIR = os.path.abspath("/all_in_one_dataset/img")    # all images live here
+    ```
 
 
 
@@ -656,9 +645,7 @@ PY
 ![image.png](../../img/How-to-use-FedMAP/image(4).png)
 
 {: .highlight }
-💡
-
-Now after task creation go to your cloned repo’s ***conf/config.yaml*** and update task id to the same task id you used when creating the task
+💡Now after task creation go to your cloned repo’s ***conf/config.yaml*** and update task id to the same task id you used when creating the task
 
 
 
@@ -688,18 +675,14 @@ Now after task creation go to your cloned repo’s ***conf/config.yaml*** and up
 - **Then, start editing server side files**
 
 {: .highlight }
-💡
-
-You can check server side files structure by typing file browser path as below and clicking browse button.
+💡You can check server side files structure by typing file browser path as below and clicking browse button.
 
 
 
 ![image.png](../../img/How-to-use-FedMAP/image(9).png)
 
 {: .highlight }
-💡
-
-Paste the file names with path in yellow colored text space → Copy & paste the file content from cloned repo structure (multimodal/Usecases/Facebook_AI_benchmark folder) into code space → Press save file button. Likewise this, do for each and every file path mentioned below.
+💡Paste the file names with path in yellow colored text space → Copy & paste the file content from cloned repo structure (multimodal/Usecases/Facebook_AI_benchmark folder) into code space → Press save file button. Likewise this, do for each and every file path mentioned below.
 
 
 
@@ -709,7 +692,6 @@ filenames with path as follows:
 
 {: .highlight }
 💡
-
 1. ***/app/code/server_main.py***
 2. ***/app/code/models.py***
 3. ***/app/code/data_preparation.py*** 
@@ -1101,9 +1083,7 @@ class FLServer():
 **Start the actual server:**
 
 {: .highlight }
-💡
-
-Click Start FL Server button  to prepare the command to run the FL server. 
+💡Click Start FL Server button  to prepare the command to run the FL server. 
 you can then see log below says FL server created.
 
 
@@ -1111,16 +1091,12 @@ you can then see log below says FL server created.
 ![image.png](../../img/How-to-use-FedMAP/image(12).png)
 
 {: .highlight }
-💡
-
-You must type **/app/data/logs/serverlog.txt** in File content field and press load button to see real time server side logs, and monitor server side FL global model training process.
+💡You must type **/app/data/logs/serverlog.txt** in File content field and press load button to see real time server side logs, and monitor server side FL global model training process.
 
 
 
 {: .highlight }
-💡
-
-You can stop the server by “**stop FL server**” button  ,if you want to stop the server in middle.
+💡You can stop the server by “**stop FL server**” button  ,if you want to stop the server in middle.
 
 
 
@@ -1140,7 +1116,7 @@ python client_main.py
 python client_manager_main.py
 
 ```
-
+{: .highlight }
 > 💡 You can run both scripts simultaneously in separate terminals.
 > 
 
