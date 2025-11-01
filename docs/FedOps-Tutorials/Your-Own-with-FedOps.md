@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Custom FedOps
+title: Your Own FL with FedOps
 parent: FedOps Tutorials
 nav_order: 3
 ---

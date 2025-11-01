@@ -1,6 +1,6 @@
 ---
 layout: default
-title: FL Client
+title: Run FL Client
 parent: FedOps Tutorials
 nav_order: 2
 ---

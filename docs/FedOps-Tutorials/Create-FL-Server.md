@@ -1,6 +1,6 @@
 ---
 layout: default
-title: FL Server Create
+title: Create FL Server
 parent: FedOps Tutorials
 nav_order: 1
 ---
