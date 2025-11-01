@@ -9,15 +9,10 @@ parent: FedOps Hyperparameter Optimize
 # FedOps clustering
 
 {: .highlight }
-🖥️
-why we have to use this method?
-
-
+🖥️ why we have to use this method?
 Conventional Federated Learning (FL) demonstrates high efficiency under Independent and Identically Distributed (IID) data settings; however, it faces the following limitations in Non-IID environments:
-
 1. **Single global model aggregation:** Since each local model converges in different directions due to heterogeneous data distributions, directly aggregating them into one global model leads to degraded performance and instability.
 2. **Fixed hyperparameters:** Using the same static hyperparameter configuration for all clients fails to capture each client’s local optimal setting.
-
 To address these issues, this guide introduces a method that analyzes the **model update patterns of clients using a density-based approach**, automatically **clusters clients with similar learning behaviors**, and performs **hyperparameter optimization within each cluster** to ensure stable and robust global convergence.
 
 ## Baseline
