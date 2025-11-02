@@ -47,17 +47,18 @@ This use case will work just fine without modifying anything.
 You can see what those that mean
 
 {: .highlight }
-- **hyperparams**: The initial set of hyperparameter candidates. Specified in the form [learning rate, batch size].
-- **ClusterOptunaFedAvg**: A FedAvg variant that combines clustering with Optuna-based hyperparameter search.
 - **warmup_rounds**: The number of rounds of warm-up training to run before starting clustering.
-- **recluster_every**: Defines how many rounds should pass before re-running clustering.
-- **eps**: The distance threshold for DBSCAN (controls how close clients must be to be grouped in the same cluster).
-- **min_samples**: The minimum number of samples for DBSCAN (the minimum number of clients required to form a valid cluster).
-- **objective**: The optimization target for HPO. Can be set to maximize F1 score, maximize accuracy, or minimize loss.
-- **search_lr_log**: Defines the search range for the learning rate in log scale. For example, [-5, -2] corresponds to 1e-5 to 1e-2.
-- **search_bs_exp**: Defines the search range for batch size in exponential scale. For example, [3, 7] corresponds to 2³–2⁷ = 8–128.
-- **search_local_epochs**: The search range for the number of local epochs each client should use.
-
+- **Recluster_Every**: Defines how many rounds should pass before re-running clustering.
+- **DBSCAN Epsilon**: The distance threshold for DBSCAN (controls how close clients must be to be grouped in the same cluster).
+- **DBSCAN Min_Samples**: The minimum number of samples for DBSCAN (the minimum number of clients required to form a valid cluster).
+- **Optimization Objective**: The optimization target for HPO. Can be set to maximize F1 score, maximize accuracy, or minimize loss.
+- **LR Search Min(log10)**: The minimum value of the learning rate search range (on a $\log_{10}$ scale).
+- **LR Search Max(log10)**: The maximum value of the learning rate search range (on a $\log_{10}$ scale).
+- **Batch Size Search_Min(log10)**: The minimum value of the batch size search range (on a $\log_{2}$ scale).
+- **Batch Size Search_Max(log10)**: The maximum value of the batch size search range (on a $\log_{2}$ scale).
+- **Local Epochs Search_Min**: The minimum value of the local_epochs search range.
+- **Local Epochs Search_Max**: The maximum value of the local_epochs search range.
+  
 
 2. Set memory like this, you have to change memory about 10Gi
     
@@ -72,7 +73,7 @@ You can see what those that mean
     
     ![image.png](../../img/How-to-use-clustering/image(4).png)
     
-    a.  If you want to experiment in a **Non-IID environment**, modify **data_preparation.py** as shown below. Copy and paste the file exactly the same way into your own **VSCode**.
+    a.  If you want to experiment in a **Non-IID environment**, modify **data_preparation.py** as shown below. Copy and paste the file exactly the same way into your own **your local folder**.
     
     The file path should be: **/app/code/data_preparation.py**
     
