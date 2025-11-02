@@ -10,7 +10,7 @@ This FL XAI explanation describes a **Grad-CAM (XAI) integration for the FedOps 
 
 ```
 - Baseline
-    - client_main.py(**code 수정**)
+    - client_main.py
     - client_mananger_main.py
     - server_main.py
     - models.py
