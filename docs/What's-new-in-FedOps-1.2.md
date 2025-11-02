@@ -1,6 +1,6 @@
 ---
 layout: default
-title: What new in FedOps 1.2
+title: What's new in FedOps 1.2
 nav_order: 4
 ---
 ## What’s new in 1.2?
