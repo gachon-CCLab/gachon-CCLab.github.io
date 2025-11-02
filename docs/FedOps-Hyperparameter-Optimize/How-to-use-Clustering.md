@@ -300,6 +300,6 @@ You can see what those that mean
     
     ![image.png](../../img/How-to-use-clustering/image(5).png)
     
-6. Check ui 
+6. And go back to fedops site and you have to check client task 
     
     ![image.png](../../img/How-to-use-clustering/image(6).png)
