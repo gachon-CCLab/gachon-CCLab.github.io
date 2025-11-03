@@ -17,7 +17,7 @@ This release provides a **drop-in replacement for FedAvg** that remains compatib
 
 ## 🚀 Key Features
 
-- **Rich Client Metadata**: Clients report validation loss, gradient norm, imbalance ratio, modality usage, and diversity in addition to weights.
+- **Rich Client Metadata**: Clients report validation loss, gradient norm, imbalance ratio, modality usage, performance meta data such as post accuracy, improvement over the last round and diversity in addition to weights.
 - **Teacher–Student Aggregation**:
     - *Teacher* uses Optuna to optimize α-weights across 7 client signals.
     - *Student* MLP aggregator distills teacher attention across FL rounds.
