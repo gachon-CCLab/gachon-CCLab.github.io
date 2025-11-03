@@ -15,7 +15,7 @@ In summary:
     
 - What's new here?
     
-    ## New XAI Feature Description
+    New XAI Feature Description
     
     - **`xai_utils.py`** integrates the **pytorch-grad-cam** library to implement a configurable Grad-CAM visualization feature.
     - Add an `xai` section in **`config.yaml`** to enable or configure Grad-CAM:
@@ -31,7 +31,7 @@ In summary:
     - During the client evaluation stage (`client_main.py → evaluate()`), the system automatically generates and saves Grad-CAM heatmaps.
     - The generated Grad-CAM images can be viewed locally under `outputs/xai/` or logged to **Weights & Biases (W&B)** for visualization and tracking.
     
-    ## Added: XAI Grad-CAM Module
+    Added: XAI Grad-CAM Module
     
     ```python
     if cfg.xai.enabled:
