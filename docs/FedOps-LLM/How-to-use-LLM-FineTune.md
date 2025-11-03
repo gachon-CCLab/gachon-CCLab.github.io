@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to use LLM Finetune
+title: How to use FedOps LLM FineTune
 parent: FedOps LLM
 nav_order: 2
 ---
