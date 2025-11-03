@@ -31,7 +31,7 @@ nav_order: 2
 2. `models.py` and `data_preparation.py` must contain **the same code** as the files on the FL server. Below is the `config.yaml` required to run the client. `config.yaml` should located at `conf/config.yaml`
     
     {: .highlight}
-    In the task_id in config.yaml, enter the task id you want to connect to
+    In the task_id in config.yaml, enter the task id you want to connect 
     ```yaml
     # Common
     random_seed: 42
