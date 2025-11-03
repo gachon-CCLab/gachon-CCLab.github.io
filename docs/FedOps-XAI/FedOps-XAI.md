@@ -8,10 +8,11 @@ permalink: docs/FedOps-XAI
 
 What is FedOps XAI? 
 
+
 In summary:
     
-    > Each FedOps client not only trains locally but also generates interpretable Grad-CAM visualizations to verify that the local model is learning meaningful spatial features before contributing updates to the global model.
-    > 
+   Each FedOps client not only trains locally but also generates interpretable Grad-CAM visualizations to verify that the local model is learning meaningful spatial features before contributing updates to the global model.
+    
 - What's new here?
     
     ## New XAI Feature Description
