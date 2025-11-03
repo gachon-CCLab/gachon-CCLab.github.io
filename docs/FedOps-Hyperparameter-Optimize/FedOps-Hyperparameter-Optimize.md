@@ -6,4 +6,4 @@ has_children: true
 permalink: docs/FedOps-Clustering-Tuning
 ---
 
-What is FedOps Clustering Tuning?
+# FedOps Clustering Tuning
