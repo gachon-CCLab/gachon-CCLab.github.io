@@ -90,27 +90,7 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
     You can open this directory (**/outputs/**) locally to view and analyze the model’s interpretability visualization results.
     
     ![image.png](../../img/How-to-use-XAI/image(8).png)
-    
-    | Element | Meaning |
-    | --- | --- |
-    | **Gray Background** | The original MNIST input image (28 × 28 pixels). |
-    | **Color Overlay** | The spatial regions where the model’s gradients contribute most to the prediction. Warmer colors (red → yellow → green → blue) indicate higher importance for the current class (e.g., “2”). |
-    | **Red/Yellow Highlights** | The key stroke areas that the model focuses on; these features are strongly activated in the convolutional layer. |
-    | **Blue/Black Areas** | Regions the model pays little attention to, having minimal impact on the classification. |
-    
-    In the **FedOps framework**, each client performs local training and explainability visualization as follows:
-    
 
-    
-    ### Explanation:
-    
-    - Activated **only** when `xai.enabled = true` in **`config.yaml`**.
-    - Executes Grad-CAM on **one test sample** from the test set.
-    - Automatically selects the convolutional layer specified in the config (e.g., `conv3`) to generate the heatmap.
-    - The generated heatmap image is saved to the directory specified by **`cfg.xai.save_dir`**.
-    - The results include:
-        - **`heatmap_img`** — the visualized overlay image.
-        - **`cam_map`** — the raw CAM value matrix.
     
     # Error solutions
     
