@@ -36,8 +36,7 @@ git clone https://github.com/gachon-CCLab/FedOps.git \
 ---
 
 ---
-
-1. Create Task: The task name is required (e.g., **xaitest**). Since this instance belongs to a general machine learning or deep learning task, select **AI** and ****set **XAI options** in enabled. Keep all subsequent options as default, and finally, choose **FedAvg** as the federated aggregation strategy.
+Create Task: The task name is required (e.g., **xaitest**). Since this instance belongs to a general machine learning or deep learning task, select **AI** and ****set **XAI options** in enabled. Keep all subsequent options as default, and finally, choose **FedAvg** as the federated aggregation strategy.
 
 ![image.png](../../img/How-to-use-XAI/image(1).png)
 
@@ -46,12 +45,10 @@ git clone https://github.com/gachon-CCLab/FedOps.git \
 Keep all other parameters as default, then click the **CREATE** button at the bottom to generate the task instance. The new task will appear in the task list.
 
 ![image.png](../../img/How-to-use-XAI/image(2).png)
-
-2. Enter the server management of the created task.
+Enter the server management of the created task.
 
 ![image.png](../../img/How-to-use-XAI/image(3).png)
-
-3. In Server Management, configure Resource Scaling (the default values are CPU: 1 and Memory: 2 Gi, so modify them if necessary).
+In Server Management, configure Resource Scaling (the default values are CPU: 1 and Memory: 2 Gi, so modify them if necessary).
     
     
     Then, click **Create Scalable Server** to create the server pod. Once created, this dashboard will show pod and PVC status as in the image above.
@@ -59,8 +56,7 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
     （ {"replicas":1,"ready_replicas":1,"available_replicas":1} is normal status）
     
     ![image.png](../../img/How-to-use-XAI/image(4).png)
-    
-4. Click **Set Start Command** to prepare the command for running the FL server.
+Click **Set Start Command** to prepare the command for running the FL server.
     
     (Although you can also start the server by clicking **Start FL Server**, it will only run the server without saving logs. Therefore, it is recommended to use **Set Start Command** to review and confirm the command before execution.)
     
@@ -70,20 +66,16 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
     
 
 ![image.png](../../img/How-to-use-XAI/image(5).png)
-
-5. Run the clients.
+Run the clients.
     - Run `client_main.py` and `client_manager_main.py`
     - Then, in the terminal to confirm whether it runs correctly.
     
     ![image.png](../../img/How-to-use-XAI/image(6).png)
-    
-6. The monitoring page can confirm the global results
+The monitoring page can confirm the global results
 
 ![image.png](../../img/How-to-use-XAI/image(7).png)
-
-7. 
-    
-    After each client completes local training, if the **XAI** feature is enabled, visualization results will be automatically saved in this directory.
+  
+After each client completes local training, if the **XAI** feature is enabled, visualization results will be automatically saved in this directory.
     
     The file naming convention is usually **`gradcam_class_<class_lable>.jpg`** 
     
