@@ -9,7 +9,7 @@ overview:
     
    Each FedOps client not only trains locally but also generates interpretable Grad-CAM visualizations to verify that the local model is learning meaningful spatial features before contributing updates to the global model.
 
-    ### **1. Grad-CAM Generation (XAI Module)**
+    1. Grad-CAM Generation (XAI Module)
     
     If `xai.enabled: true` and `xai.run_location: client` are set in the configuration, the client will:
     
@@ -19,7 +19,7 @@ overview:
     - Save the visualized results to the directory: `outputs/gradcam/`.
     
     
-    ### **2. Local Explainability Evaluation**
+    2. Local Explainability Evaluation
     
     These heatmaps help to evaluate:
     
