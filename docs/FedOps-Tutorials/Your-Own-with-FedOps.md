@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your Own FL with FedOps
-parent: FedOps Tutorials
+parent: Get started with FedOps
 nav_order: 3
 ---
 

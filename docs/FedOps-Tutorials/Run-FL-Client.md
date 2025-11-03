@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Run FL Client
-parent: FedOps Tutorials
+parent: Get started with FedOps
 nav_order: 2
 ---
 
