@@ -1,10 +1,9 @@
 ---
 layout: default
-title: LLM Finetune
+title: How to use LLM Finetune
 parent: FedOps LLM
 nav_order: 1
 ---
-
 {: .highlight }
 This guide provides step-by-step instructions on how to implement FedOps LLM Fine-Tune, a federated learning lifecycle management operations framework.
 
@@ -105,7 +104,7 @@ Therefore, we'll edit the code using the File Browser.
 
 3.6-2 Click the Start FL Server button to start the server.
 
-**<How to check the log of a running federated learning server>**
+**`<How to check the log of a running federated learning server>`**
 
 Enter `/app/data/logs/serverlog.txt` in the File Browser, File Content path of FedOps Web and click the Load button. You can view the logs up to that point.
 
