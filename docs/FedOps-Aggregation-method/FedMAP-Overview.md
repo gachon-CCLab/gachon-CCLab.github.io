@@ -5,7 +5,8 @@ nav_order: 1
 parent: FedOps Aggregation method
 ---
 
-## 🎯 FedMAP Overview
+# 🎯 FedMAP Overview
+<br />
 
 Federated Averaging (FedAvg) is the de facto baseline in FL, but it **fails under non-IID, imbalanced, and multimodal data distributions**. Even lately introduced FedProx was utilizing Fedavg aggregation on the server side, while using mu parameter to mitigate client drift.
 
