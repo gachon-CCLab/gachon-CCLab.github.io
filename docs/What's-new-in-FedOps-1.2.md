@@ -5,9 +5,7 @@ nav_order: 4
 ---
 ## What’s new in 1.2?
 
-🧠 **Federated LLM Fine-Tuning**
-
- **(Link:** https://gachon-cclab.github.io/docs/FedOps-LLM/LLM-Finetune/**)**
+🧠 [**Federated LLM Fine-Tuning**](https://gachon-cclab.github.io/docs/FedOps-LLM/FedOps%20LLM%20Overview/)
 
 - Adapt LLMs to distributed data **without sharing raw data**—fully privacy-preserving. Powered by **FlowerTune**, FedOps 1.2 automates the **end-to-end pipeline**: task config → distributed **LoRA training** → model aggregation → global checkpointing.
 - **Solves**: High GPU/comms overhead, data silos, manual orchestration.
@@ -19,30 +17,25 @@ nav_order: 4
 
 🔬 **Advanced Federated Learning Capabilities – Now Fully Turnkey via Simple Config Flags** 
 
-- **Explainable AI (XAI) Built-In**
-    
-    **(Link:** https://gachon-cclab.github.io/docs/FedOps-XAI/How-to-use-XAI/**)**: 
-    
+- [**Explainable AI (XAI) Built-In**](https://gachon-cclab.github.io/docs/FedOps-XAI/What's-FedOps-XAI/)
+
     Enable federated interpretability with Grad-CAM-based XAI to visualize model decisions on local physiological or image data. Clients generate Grad-CAM heatmaps (e.g., MNIST), report aggregated metrics (entropy, similarity), plus per-round explainability hooks for feature importance, drift checks, and exportable reports. Close the **interpretability gap** in privacy-preserving FL.
     
-- **Intelligent Client Clustering + Hyperparameter Optimization (HPO)**
+- [**Intelligent Client Clustering + Hyperparameter Optimization (HPO)**](https://gachon-cclab.github.io/docs/FedOps-Hyperparameter-Optimize/How-to-use-Clustering)
     
-    **(Link:** https://gachon-cclab.github.io/docs/FedOps-Hyperparameter-Optimize/How-to-use-Clustering/**)**: 
     
     Automatically group clients by data/behavioral signatures, then run **cluster-specific HPO** to unlock optimal performance even under severe **Non-IID conditions**.
     
-- **FedMAP Aggregation for Multimodal FL (MMFL)**
+- [**FedMAP Aggregation for Multimodal FL (MMFL)**](https://gachon-cclab.github.io/docs/FedOps-Aggregation-method/How-use-FedMAP/)
     
-    **(Link:** https://gachon-cclab.github.io/docs/FedOps-Aggregation-method/How-use-FedMAP/: 
     
     A new multimodal FL aggregation method that dynamically learns **adaptive client weights** from interpretable meta-features—engineered for **real-world multimodal, non-IID clients**.
     
 
 **All features ship with full guided tutorials, end-to-end examples, and production-ready use cases.**
 
-⌚ **Fitbit Wearable Pipeline**
+⌚ [**Fitbit Wearable Pipeline**](https://gachon-cclab.github.io/docs/FedOps-Fitbit-Health-Pipeline/What-is-FedOps-Fitbit-Health-Pipeline/)
 
-     **(Link: please add Emedy link here,i cannot see emedy in fedops docs)**
 
 - We've integrated a **real-world federated IoT health pipeline** using **Fitbit wearable data**. Enables privacy-preserving sleep-quality prediction and personalized health monitoring without centralizing user data.
 - Introduces an open-source lightweight SleepLSTM model with 3-layer LSTM + projection bottleneck for temporal feature learning on multivariate Fitbit signals.
