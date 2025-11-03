@@ -50,10 +50,10 @@ You can see what those that mean
 - **DBSCAN Epsilon**: The distance threshold for DBSCAN (controls how close clients must be to be grouped in the same cluster).
 - **DBSCAN Min_Samples**: The minimum number of samples for DBSCAN (the minimum number of clients required to form a valid cluster).
 - **Optimization Objective**: The optimization target for HPO. Can be set to maximize F1 score, maximize accuracy, or minimize loss.
-- **LR Search Min(log10)**: The minimum value of the learning rate search range (on a $\log_{10}$ scale).
-- **LR Search Max(log10)**: The maximum value of the learning rate search range (on a $\log_{10}$ scale).
-- **Batch Size Search_Min(log10)**: The minimum value of the batch size search range (on a $\log_{2}$ scale).
-- **Batch Size Search_Max(log10)**: The maximum value of the batch size search range (on a $\log_{2}$ scale).
+- **LR Search Min(log10)**: The minimum value of the learning rate search range (on a log_10 scale).
+- **LR Search Max(log10)**: The maximum value of the learning rate search range (on a log_10 scale).
+- **Batch Size Search_Min(log2)**: The minimum value of the batch size search range (on a log_2 scale).
+- **Batch Size Search_Max(log2)**: The maximum value of the batch size search range (on a log_2 scale).
 - **Local Epochs Search_Min**: The minimum value of the local_epochs search range.
 - **Local Epochs Search_Max**: The maximum value of the local_epochs search range.
   
