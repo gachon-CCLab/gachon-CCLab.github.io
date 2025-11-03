@@ -4,7 +4,9 @@ title: How to use FedOps Clustering Tuning
 nav_order: 2
 parent: FedOps Clustering Tuning
 ---
-## 📝 FedOps Clustering Tuning Guide
+# 📝 FedOps Clustering Tuning Guide
+
+<br />
 
 {: .highlight }
 This guide provides step-by-step instructions on how to implement FedOps Clustering Tuning, a federated learning lifecycle management operations framework.
