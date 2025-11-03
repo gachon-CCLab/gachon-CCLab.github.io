@@ -39,8 +39,6 @@ This release provides a **drop-in replacement for FedAvg** that remains compatib
 
 ---
 
----
-
 ## 📂 Availability
 
 - Fully **Hydra-configurable** (all params in `conf/config.yaml`).
