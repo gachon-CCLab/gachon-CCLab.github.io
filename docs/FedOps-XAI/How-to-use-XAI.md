@@ -35,7 +35,6 @@ git clone https://github.com/gachon-CCLab/FedOps.git \
 
 ---
 
----
 Create Task: The task name is required (e.g., **xaitest**). Since this instance belongs to a general machine learning or deep learning task, select **AI** and ****set **XAI options** in enabled. Keep all subsequent options as default, and finally, choose **FedAvg** as the federated aggregation strategy.
 
 ![image.png](../../img/How-to-use-XAI/image(1).png)
@@ -50,48 +49,47 @@ Enter the server management of the created task.
 ![image.png](../../img/How-to-use-XAI/image(3).png)
 In Server Management, configure Resource Scaling (the default values are CPU: 1 and Memory: 2 Gi, so modify them if necessary).
     
-    
-    Then, click **Create Scalable Server** to create the server pod. Once created, this dashboard will show pod and PVC status as in the image above.
+Then, click **Create Scalable Server** to create the server pod. Once created, this dashboard will show pod and PVC status as in the image above.
     
     （ {"replicas":1,"ready_replicas":1,"available_replicas":1} is normal status）
     
-    ![image.png](../../img/How-to-use-XAI/image(4).png)
+
+![image.png](../../img/How-to-use-XAI/image(4).png)
+
 Click **Set Start Command** to prepare the command for running the FL server.
-    
-    (Although you can also start the server by clicking **Start FL Server**, it will only run the server without saving logs. Therefore, it is recommended to use **Set Start Command** to review and confirm the command before execution.)
-    
-    Once the command is ready, click **Execute** to run it.
-    
-    Then, click **Check Process** to verify that the FL server process is running.
+(Although you can also start the server by clicking **Start FL Server**, it will only run the server without saving logs. Therefore, it is recommended to use **Set Start Command** to review and confirm the command before execution.)
+Once the command is ready, click **Execute** to run it.
+Then, click **Check Process** to verify that the FL server process is running.
     
 
 ![image.png](../../img/How-to-use-XAI/image(5).png)
+
 Run the clients.
     - Run `client_main.py` and `client_manager_main.py`
     - Then, in the terminal to confirm whether it runs correctly.
     
-    ![image.png](../../img/How-to-use-XAI/image(6).png)
+![image.png](../../img/How-to-use-XAI/image(6).png)
+
 The monitoring page can confirm the global results
 
 ![image.png](../../img/How-to-use-XAI/image(7).png)
   
 After each client completes local training, if the **XAI** feature is enabled, visualization results will be automatically saved in this directory.
-    
-    The file naming convention is usually **`gradcam_class_<class_lable>.jpg`** 
-    
-    You can open this directory (**/outputs/**) locally to view and analyze the model’s interpretability visualization results.
-    
-    ![image.png](../../img/How-to-use-XAI/image(8).png)
+
+The file naming convention is usually **`gradcam_class_<class_lable>.jpg`** 
+
+You can open this directory (**/outputs/**) locally to view and analyze the model’s interpretability visualization results.
+
+![image.png](../../img/How-to-use-XAI/image(8).png)
 
     
-    # Error solutions
+# Error solutions
     
-    - if you encounter an issue related to client/app.py do these changes.
+- if you encounter an issue related to client/app.py do these changes.
         
+  with fedops 1.1.30.4 version i had to modify client/app.py and client/client_fl.py as below to make it work woth mnist-xai.
         
-        with fedops 1.1.30.4 version i had to modify client/app.py and client/client_fl.py as below to make it work woth mnist-xai.
-        
-         just paste the script below in vscode client terminal and it will automatically find the file and modifies client/app.py .
+  just paste the script below in vscode client terminal and it will automatically find the file and modifies client/app.py .
         
         ```jsx
         # Locate app.py dynamically, backup, overwrite with given content, then verify
@@ -365,12 +363,10 @@ After each client completes local training, if the **XAI** feature is enabled, v
                     if self.xai == True:
                         # close xai
                         GradCAM.close_xai()
-        PYCODE
-        ```
+
         
-        just paste the script below in vscode client terminal and it will automatically find the file and modifies client/client_fl.py .
+  just paste the script below in vscode client terminal and it will automatically find the file and modifies client/client_fl.py .
         
-        ```jsx
         # Locate client_fl.py dynamically, backup, overwrite with given content, then verify
         CLIENT_FL_PATH="$(python - <<'PY'
         import importlib, inspect, pathlib
@@ -603,8 +599,6 @@ After each client completes local training, if the **XAI** feature is enabled, v
         
         def flower_client_start(server_address, client):
             fl.client.start_numpy_client(server_address=server_address, client=client)
-        PYCODE
-        ```
       
         
     
