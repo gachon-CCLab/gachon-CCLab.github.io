@@ -633,63 +633,8 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
             fl.client.start_numpy_client(server_address=server_address, client=client)
         PYCODE
         ```
-        
-        Akeel’s client side edit ends
+      
         
     
 - 
     
-    ## Step
-    
-    1. ***Start by cloning the FedOps.***
-    - Pytorch (MNIST example)
-        
-        ```
-        ~~git clone https://github.com/gachon-CCLab/FedOps.git && mv FedOps/silo/examples/torch/MNIST . && rm -rf FedOps~~
-        ```
-        
-    1. ***Customize the FedOps example code.***
-        - Customize the FedOps silo example code to align with your FL task.
-        - Data & Model:
-            - Prepare your data in `data_preparation.py` and define your model in `models.py`.
-            - Enter your data and model in `conf/config.yaml`
-        - Client:
-            - Configure settings in `conf/config.yaml` for task ID, data, and WandB information.
-            - Implement data_preparation.py for data handling.
-            - Build `models.py` for local model specifications.
-            - Register data and model, and run the client using `client_main.py`.
-        - Server:
-            - Configure settings in `conf/config.yaml` for FL/Aggregation hyperparameters and data information.
-            - Implement `models.py` to initialize the global model.
-            - Register data (for evaluating the global model) and initialize the global model in `server_main.py`.
-            - XAI view ( Under development)
-    2. ***Create your Git repository and add FL server code.***
-        - Set up your own Git repository and add the FL server code (`server_main.py, models.py, data_preparation.py, requirementst.txt, conf/config.yaml`).
-        - This code will be used to deploy and run the FL server in CCL k8s environment.
-    3. ***Create FL task on FedOps web interface.***
-        - Use the FedOps web interface to create your FL task.
-        - Specify the Git repository address for your FL server code.
-        - Refer [FedOps Silo Guide](https://gachon-cclab.github.io/docs/user-guide/silo-guide/)
-    4. ***Run the clients.***
-        - Run `client_main.py` and `client_manager_main.py`
-        - Or choose either [Docker or shell(localhost)](https://github.com/gachon-CCLab/FedOps/tree/main/silo/examples/torch/docker-mnist) to run the clients.
-        - XAI view
-            
-            After running the client program with the XAI feature enabled, Grad-CAM interpretability heatmaps are automatically generated and saved to the specified output directory.
-            
-            By default, the output path is the **`outputs/`** folder located in the project root.
-            
-            The generated files are usually named**`gradcam_output.jpg`**, with each image corresponding to one interpretability analysis result.
-            
-            then the heatmap images will be saved under the **`./outputs/xai/`** directory.
-            
-            You can open them from the file manager by navigating to the `outputs` folder.
-            
-            Each experiment run will create new Grad-CAM images in a corresponding date or round subdirectory, allowing you to analyze which regions the model focuses on for different samples.
-            
-    5. ***Initiate the FL task.***
-        - Select the desired clients on the FedOps web interface and initiate the FL task by clicking the "FL start" button.
-    6. ***Monitor and manage the FL task***
-        - Monitor the performance of local and global models, and manage/download the global model as the FL task administrator through the FedOps web interface.
-    7. ***Monitor data and local model performance***
-        - Monitor the health of data and local model performance as the device administrator through the designated WandB.
