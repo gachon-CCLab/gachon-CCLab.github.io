@@ -6,4 +6,4 @@ has_children: true
 permalink: docs/FedOps-Aggregation-method
 ---
 
-What is FedOps Aggregation method?
+# FedOps Aggregation method
