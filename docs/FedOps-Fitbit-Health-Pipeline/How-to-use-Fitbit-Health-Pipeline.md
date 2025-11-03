@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to use Fitbit Health Pipeline
-nav_order: 1
+nav_order: 2
 parent: FedOps Fitbit Health Pipeline
 ---
 ### overview
