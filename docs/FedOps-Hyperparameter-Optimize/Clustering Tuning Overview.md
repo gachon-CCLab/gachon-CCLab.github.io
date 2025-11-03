@@ -4,9 +4,7 @@ title: Clustering Tuning Overview
 nav_order: 1
 parent: FedOps Clustering Tuning
 ---
-# FedOps 1.2 guide
-
-# FedOps Clustering Tuning
+# FedOps Clustering Tuning Overview
 
 {: .highlight }
 🖥️ why we have to use this method?
