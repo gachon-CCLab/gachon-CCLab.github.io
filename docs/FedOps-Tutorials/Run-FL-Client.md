@@ -13,38 +13,24 @@ nav_order: 2
 > 
 1. **Install the `fedops` library on the client environment.**
 
-```bash
-pip install fedops
-```
+    ```bash
+    pip install fedops
+    ```
 
 1. **Prepare the project directory structure as follows.**
     
     The files required to run the client should be organized like this.
     
 
-```
-app/code/
-├── client_main.py
-├── client_manager_main.py
-├── data_preparation.py
-├── models.py
-└── conf
-    └── config.yaml
-
-```
-
-The client’s directory layout should be:
-
-```
-fedops-client/
-├── client_main.py
-├── client_manager_main.py
-├── data_preparation.py
-├── models.py
-└── conf
-    └── config.yaml
-
-```
+    ```
+    app/code/
+    ├── client_main.py
+    ├── client_manager_main.py
+    ├── data_preparation.py
+    ├── models.py
+    └── conf
+        └── config.yaml
+    ```
 
 `models.py` and `data_preparation.py` must contain **the same code** as the files on the FL server.
 
