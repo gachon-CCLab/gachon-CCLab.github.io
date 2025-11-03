@@ -47,15 +47,14 @@ The input features used for clustering are as follows:
 
 ### Clustering Feature Vector
 
-```math
+Client features used for clustering:
 
-\mathbf{x}_i = [\log_{10}(lr_i), \log_{2}(bs_i), \mathcal{l}_i]
+- log10 of the learning rate
+- log2 of the batch size
+- local training loss
 
-```
+These three values form a 3-dimensional feature vector and are standardized (Z-score) before being used for DBSCAN.
 
-* learning rate: Learning Rate of client 
-* batch size : Batch Size of client 
-* loss : Local Loss of client
   
 * **Preprocessing:** These three variables are log-transformed and then standardized using Z-score normalization before being used as input for DBSCAN.
 * **Excluded Hyperparameters:** Parameters such as `weight decay` were excluded from the clustering features. This decision was made because they primarily influence model generalization rather than convergence direction, making them unsuitable as discriminative factors. Instead, they are treated as independently searchable variables within each cluster's Optuna Study.
