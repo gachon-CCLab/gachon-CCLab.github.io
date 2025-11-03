@@ -62,13 +62,13 @@ pip install fedops
 We extend our sincere gratitude to the dedicated team at **Gachon Cognitive Computing Lab** who made this release possible:
 
 - Yong-gyom Kim ([gyom1204@gachon.ac.kr](mailto:gyom1204@gachon.ac.kr))
-- InSeo Song (z8086486@gachon.ac.kr)
-- JingYao Shi (11490800573@gachon.ac.kr)
-- Ri-Ra Kang (rirakang@gachon.ac.kr)
-- Akeel (akeelahamed@gachon.ac.kr)
-- MinHyuk Jung(bvnm0121@gachon.ac.kr)
+- InSeo Song ([z8086486@gachon.ac.kr](mailto:z8086486@gachon.ac.kr))
+- JingYao Shi ([11490800573@gachon.ac.kr](mailto:11490800573@gachon.ac.kr))
+- Ri-Ra Kang ([rirakang@gachon.ac.kr](mailto:rirakang@gachon.ac.kr))
+- Akeel ([akeelahamed@gachon.ac.kr](mailto:akeelahamed@gachon.ac.kr))
+- MinHyuk Jung([bvnm0121@gachon.ac.kr](mailto:bvnm0121@gachon.ac.kr))
 - JinYong Jung ([wlsdyd5373@gachon.ac.kr](mailto:wlsdyd5373@gachon.ac.kr))
-- Advised by Prof. KangYoon Lee (keylee@gachon.ac.kr)
+- Advised by Prof. KangYoon Lee ([keylee@gachon.ac.kr](mailto:keylee@gachon.ac.kr))
 
 ***Explore the new features and documentation on our website*** 
 
