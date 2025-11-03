@@ -1,12 +1,12 @@
 ---
 layout: default
-title: How to use FedOps Clustering
+title: How to use FedOps Clustering Tuning
 nav_order: 1
-parent: FedOps Hyperparameter Optimize
+parent: FedOps Clustering Tuning
 ---
 # FedOps 1.2 guide
 
-# FedOps clustering
+# FedOps Clustering Tuning
 
 {: .highlight }
 🖥️ why we have to use this method?
