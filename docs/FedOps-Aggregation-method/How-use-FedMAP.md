@@ -25,15 +25,10 @@ parent: FedOps Aggregation method
     - server_main.py (# main server side file, dont need to run this)
 
 ```
-    
----
 
 ---
     
-### 🔁 1. Clone the Repository
-
-{: .highlight }
-❗Clone where?
+### 🔁 1. Clone the Repository at Client
 
 
 ```bash
