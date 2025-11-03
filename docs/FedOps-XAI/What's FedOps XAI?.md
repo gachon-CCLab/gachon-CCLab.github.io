@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to use FedOps XAI
+title: What's FedOps XAI?
 nav_order: 1
 parent: FedOps XAI
 ---
