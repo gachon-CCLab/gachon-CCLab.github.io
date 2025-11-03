@@ -87,7 +87,7 @@ IMG_DIR = os.path.abspath("/all_in_one_dataset/img")    # all images live here
 
 - Now Paste below script  in  your client side local IDE (eg: VS Code) to automatically edit **client/ app.py** file( **remember you just have to copy paste whole script at once in terminal**).
 
-```jsx
+```python
 APP_FILE="$(python -c 'import fedops.client.app as m; print(m.__file__)')"; \
 cp "$APP_FILE" "${APP_FILE}.bak-$(date +%Y%m%d-%H%M%S)"; \
 cat > "$APP_FILE" <<'PY'
@@ -357,7 +357,7 @@ PY
 
 - Now Paste below script  in  your client side local IDE (eg: VS Code) to automatically edit **client/client_fl.py** file( **remember you just have to copy paste whole script at once in terminal**).
 
-```jsx
+```python
 # 1) Locate the file and back it up
 APP_FILE="$(python -c 'import fedops.client.client_fl as m; print(m.__file__)')"
 echo "Target: $APP_FILE"
@@ -695,7 +695,7 @@ filenames with path as follows:
 - How to edit **/usr/local/lib/python3.10/site-packages/fedops/server/app.py**? see below.
 Since this file isn’t exist in downloaded repo, paste below code content into this file code.
 
-```jsx
+```python
 # server/app.py
 #FILE_PATH=/usr/local/lib/python3.10/site-packages/fedops/server/app.py
 
@@ -1130,6 +1130,6 @@ Use the following tabs to track progress:
 
 ### After Successfully finishing FL rounds, don’t forget to execute below command again in your local client side . (Reason: since we modified client/app.py and client/client_fl.py for this setup. By doing pip install again it will bring those two files into original code )
 
-```jsx
+```python
 pip install fedops==1.1.30.4
 ```
