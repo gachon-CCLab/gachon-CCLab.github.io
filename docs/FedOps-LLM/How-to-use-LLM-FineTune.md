@@ -6,6 +6,8 @@ nav_order: 2
 ---
 ## 📝 FedOps LLM Guide
 
+<br />
+
 {: .highlight }
 This guide provides step-by-step instructions on how to implement FedOps LLM Fine-Tune, a federated learning lifecycle management operations framework.
 
