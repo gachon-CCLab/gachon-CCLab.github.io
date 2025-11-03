@@ -5,7 +5,7 @@ nav_order: 1
 parent: FedOps Clustering Tuning
 ---
 
-## 🎯 FedOps Clustering Tuning Overview
+# 🎯 FedOps Clustering Tuning Overview
 <br />
 
 Conventional Federated Learning (FL) demonstrates high efficiency under Independent and Identically Distributed (IID) data settings; however, it faces the following limitations in Non-IID environments:
