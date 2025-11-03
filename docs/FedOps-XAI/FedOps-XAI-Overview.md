@@ -5,7 +5,7 @@ nav_order: 1
 parent: FedOps XAI
 ---
 
-overview:
+## 🎯 Overview
     
    Each FedOps client not only trains locally but also generates interpretable Grad-CAM visualizations to verify that the local model is learning meaningful spatial features before contributing updates to the global model.
 
