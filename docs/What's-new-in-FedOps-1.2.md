@@ -11,7 +11,7 @@ nav_order: 4
 - **Solves**: High GPU/comms overhead, data silos, manual orchestration.
 - **Delivers**: Parameter-efficient tuning, minimal setup, domain-specific LLM adaptation at scale.
 
-**✨ Enhanced Automatic Configuration and FL Server Code Generation** 
+✨[**Enhanced Automatic Configuration and FL Server Code Generation** ](https://gachon-cclab.github.io/docs/FedOps-Tutorials)
 
 - FedOps 1.2 auto-generates validated configs + runnable FL server/client code stubs instantly from your task spec. No more manual tuning—strategy, metrics, hooks, and datasets are pre-wired. Deployment just got drastically faster.
 
@@ -42,8 +42,6 @@ nav_order: 4
 
 **🖥️ Enhanced FL Server Logs & Monitoring**
 
-    (Link:** https://gachon-cclab.github.io/docs/FedOps-Tutorials**)
-
 - **Problem Solved**: Hard to track system health, performance drift, and errors in production FL runs.
 - **What’s New**: Deep observability with real-time insights into metrics, logs, and lifecycle state.
     - **FL Status Tracking**: Monitors **creation → execution → termination** stages, providing clear status indicators to guide next actions.
@@ -54,7 +52,7 @@ nav_order: 4
 ### Installation Procedure & Requirements
 
 ```jsx
-**pip install fedops**
+pip install fedops
 ```
 
 ***This release is a valuable advancement for researchers, engineers, and teams building privacy-first AI on distributed data—delivering production-grade orchestration, LLM adaptation, multimodal robustness, and full observability with minimal-touch deployment.***
@@ -74,8 +72,8 @@ We extend our sincere gratitude to the dedicated team at **Gachon Cognitive Comp
 
 ***Explore the new features and documentation on our website*** 
 
-***( link:*** http://210.102.181.208:40007/ ***).***
+***( link:***https://ccl.gachon.ac.kr/fedops***).***
 
 ***Join the Discussion: Connect with the community on our Slack channel***
 
-***(link:*** https://join.slack.com/t/fedopshq/shared_invite/zt-1xvo9pkm8-drLEdtOT1_vNbcXoxGmQ5A***).***
+***(link:***https://fedopshq.slack.com/join/shared_invite/zt-3h73abys7-ms07FlAVG7EP2108BzevcA#/shared-invite/email***).***
