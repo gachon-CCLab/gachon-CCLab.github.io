@@ -2,7 +2,7 @@
 layout: default
 title: How to use LLM Finetune
 parent: FedOps LLM
-nav_order: 1
+nav_order: 2
 ---
 {: .highlight }
 This guide provides step-by-step instructions on how to implement FedOps LLM Fine-Tune, a federated learning lifecycle management operations framework.
@@ -41,7 +41,9 @@ This use case will work just fine without modifying anything.
 **[(Optional) means that you can edit any part you want. It also means that you don't have to edit anything.]**
 
 2.1 Enter a Task Title.
+
 2.2 Select LLM as the Model Type.
+
 2.3 Edit the Training Parameters & FedAvg Parameters. **(Optional)**
 
 ![image.png](../../img/FedOps-LLM/LLM-Finetune/image(3).png)
