@@ -4,10 +4,9 @@ title: FedOps LLM Overview
 parent: FedOps LLM
 nav_order: 1
 ---
-
 # FedOps LLM Overview
 
-![image.png](https://file+.vscode-resource.vscode-cdn.net/Users/song-inseo/fedops_blog_md/gachon-CCLab.github.io/img/FedOps-LLM/LLM-Finetune/image(1).png)
+![image.png](https://github.com/gachon-CCLab/gachon-CCLab.github.io/blob/main/docs/img/FedOps-LLM/Overview/FedOpsLLMFigure.png?raw=true)
 
 FedOps LLM enables large language models to be trained directly within federated learning environments where real clients participate in the learning process. Instead of centralizing data, each participant contributes to model improvement while keeping their data securely within their own environment. This approach allows organizations to collaboratively build specialized LLMs without compromising privacy or data ownership.
 
