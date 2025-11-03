@@ -40,15 +40,13 @@ nav_order: 1
     1. By default, the Scalable Server is provisioned with **1 CPU** and **2 Gi** of memory. You can change these in **Resource Scaling** and apply them with **Scale Resources**.
     2. Once server creation starts successfully, the **FL Status** will change. (Click **Refresh Status** to update the status.)
     
-        
         ![image.png](../../img/FedOps-Tutorials/FL-Server-Create/image(4).png)
         
-    3. You can check the environment setup logs via **Server Logs**. When setup completes, the **FL Status** shows **“FL Server created.”** (Click **Refresh Logs** to update the logs.)
+4. You can check the environment setup logs via **Server Logs**. When setup completes, the **FL Status** shows **“FL Server created.”** (Click **Refresh Logs** to update the logs.)
+
+    ![image.png](../../img/FedOps-Tutorials/FL-Server-Create/image(5).png)
     
-        
-        ![image.png](../../img/FedOps-Tutorials/FL-Server-Create/image(5).png)
-        
-    4. The created server’s file structure is as follows. `models.py` and `data_preparation.py` include default MNIST example code. `conf/config.yaml` is populated with the options you set when creating the task.
+5. The created server’s file structure is as follows. `models.py` and `data_preparation.py` include default MNIST example code. `conf/config.yaml` is populated with the options you set when creating the task.
     ```
     app/code/
     ├── client_main.py
@@ -61,9 +59,8 @@ nav_order: 1
         └── config.yaml
     ```
 
-    5. Click **Start FL Server** to launch the FL Server.
-    
+6. Click **Start FL Server** to launch the FL Server.
+
     ![image.png](../../img/FedOps-Tutorials/FL-Server-Create/image(6).png)
-    
     1. The FL server’s runtime logs are saved to **/app/data/logs/serverlog.txt**. Use **File Content** to view the server’s logs.
     2. **Stop FL Server** terminates the running FL Server process.
