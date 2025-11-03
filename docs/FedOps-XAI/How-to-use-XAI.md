@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to use FedOps XAI
-nav_order: 1
+nav_order: 2
 parent: FedOps XAI
 ---
 This FL XAI explanation describes a **Grad-CAM (XAI) integration for the FedOps MNIST example**, which supports single-channel MNIST input and automatically generates heatmaps during local (client-side) federated evaluation.
