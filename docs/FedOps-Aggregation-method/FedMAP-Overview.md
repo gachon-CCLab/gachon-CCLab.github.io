@@ -32,7 +32,7 @@ This release provides a **drop-in replacement for FedAvg** that remains compatib
 | Aspect | FedAvg | FedMAP |
 | --- | --- | --- |
 | **Aggregation** | Simple averaging | Metadata-driven, modality-aware, adaptive |
-| **Signals** | Only model weights, dataset size | + Val loss, grad norm, imbalance, diversity, modalities info |
+| **Signals** | Only model weights, dataset size | + Val loss, post-accuracy, improvement over last round, grad norm, imbalance, diversity, modalities info |
 | **Fairness** | Biased to large clients | Balances minority & diverse clients |
 | **Evaluation** | Local only | Global F1-macro evaluation |
 | **Robustness** | Sensitive to skew | FedProx + grad control |
