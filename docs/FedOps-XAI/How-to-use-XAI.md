@@ -100,37 +100,7 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
     
     In the **FedOps framework**, each client performs local training and explainability visualization as follows:
     
-    ---
-    
-    ### **1. Local Data Training**
-    
-    Each client trains locally on its own subset of the MNIST dataset for several epochs.
-    
-    ---
-    
-    ### **2. Grad-CAM Generation (XAI Module)**
-    
-    If `xai.enabled: true` and `xai.run_location: client` are set in the configuration, the client will:
-    
-    - Perform **forward** and **backward** passes on local validation samples.
-    - Extract gradients and feature maps from the **target explanation layer** (e.g., `conv2`).
-    - Compute **Grad-CAM weights** and overlay the resulting heatmap onto the original image.
-    - Save the visualized results to the directory: `outputs/gradcam/`.
-    
-    ---
-    
-    ### **3. Local Explainability Evaluation**
-    
-    These heatmaps help to evaluate:
-    
-    - Whether the model is focusing on the **actual stroke regions** of digits (indicating correct learning).
-    - Whether there are **biased or noisy attention areas**, which could signal overfitting or abnormal local data.
-    
-    ---
-    
-   
-    
-    ---
+
     
     ### Explanation:
     
