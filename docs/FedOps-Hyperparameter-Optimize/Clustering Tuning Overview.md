@@ -18,8 +18,8 @@ To address these issues, this guide introduces a method that analyzes the **mode
 
 
 {: .highlight }
-🔥 Here is steop of Clustering Tuning 
----
+🔥 Here is Step of Clustering Tuning 
+
 
 The framework operates along three main axes:
 1.  **Dynamic Client Clustering**
