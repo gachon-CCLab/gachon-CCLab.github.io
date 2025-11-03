@@ -47,11 +47,11 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
 
 ![image.png](../../img/How-to-use-XAI/image(2).png)
 
-1. Enter the server management of the created task.
+2. Enter the server management of the created task.
 
 ![image.png](../../img/How-to-use-XAI/image(3).png)
 
-1. In Server Management, configure Resource Scaling (the default values are CPU: 1 and Memory: 2 Gi, so modify them if necessary).
+3. In Server Management, configure Resource Scaling (the default values are CPU: 1 and Memory: 2 Gi, so modify them if necessary).
     
     
     Then, click **Create Scalable Server** to create the server pod. Once created, this dashboard will show pod and PVC status as in the image above.
@@ -60,7 +60,7 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
     
     ![image.png](../../img/How-to-use-XAI/image(4).png)
     
-2. Click **Set Start Command** to prepare the command for running the FL server.
+4. Click **Set Start Command** to prepare the command for running the FL server.
     
     (Although you can also start the server by clicking **Start FL Server**, it will only run the server without saving logs. Therefore, it is recommended to use **Set Start Command** to review and confirm the command before execution.)
     
@@ -71,17 +71,17 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
 
 ![image.png](../../img/How-to-use-XAI/image(5).png)
 
-1. Run the clients.
+5. Run the clients.
     - Run `client_main.py` and `client_manager_main.py`
     - Then, in the terminal to confirm whether it runs correctly.
     
     ![image.png](../../img/How-to-use-XAI/image(6).png)
     
-2. The monitoring page can confirm the global results
+6. The monitoring page can confirm the global results
 
 ![image.png](../../img/How-to-use-XAI/image(7).png)
 
-1. 
+7. 
     
     After each client completes local training, if the **XAI** feature is enabled, visualization results will be automatically saved in this directory.
     
@@ -90,27 +90,7 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
     You can open this directory (**/outputs/**) locally to view and analyze the model’s interpretability visualization results.
     
     ![image.png](../../img/How-to-use-XAI/image(8).png)
-    
-    | Element | Meaning |
-    | --- | --- |
-    | **Gray Background** | The original MNIST input image (28 × 28 pixels). |
-    | **Color Overlay** | The spatial regions where the model’s gradients contribute most to the prediction. Warmer colors (red → yellow → green → blue) indicate higher importance for the current class (e.g., “2”). |
-    | **Red/Yellow Highlights** | The key stroke areas that the model focuses on; these features are strongly activated in the convolutional layer. |
-    | **Blue/Black Areas** | Regions the model pays little attention to, having minimal impact on the classification. |
-    
-    In the **FedOps framework**, each client performs local training and explainability visualization as follows:
-    
 
-    
-    ### Explanation:
-    
-    - Activated **only** when `xai.enabled = true` in **`config.yaml`**.
-    - Executes Grad-CAM on **one test sample** from the test set.
-    - Automatically selects the convolutional layer specified in the config (e.g., `conv3`) to generate the heatmap.
-    - The generated heatmap image is saved to the directory specified by **`cfg.xai.save_dir`**.
-    - The results include:
-        - **`heatmap_img`** — the visualized overlay image.
-        - **`cam_map`** — the raw CAM value matrix.
     
     # Error solutions
     
@@ -633,63 +613,8 @@ Keep all other parameters as default, then click the **CREATE** button at the bo
             fl.client.start_numpy_client(server_address=server_address, client=client)
         PYCODE
         ```
-        
-        Akeel’s client side edit ends
+      
         
     
 - 
     
-    ## Step
-    
-    1. ***Start by cloning the FedOps.***
-    - Pytorch (MNIST example)
-        
-        ```
-        ~~git clone https://github.com/gachon-CCLab/FedOps.git && mv FedOps/silo/examples/torch/MNIST . && rm -rf FedOps~~
-        ```
-        
-    1. ***Customize the FedOps example code.***
-        - Customize the FedOps silo example code to align with your FL task.
-        - Data & Model:
-            - Prepare your data in `data_preparation.py` and define your model in `models.py`.
-            - Enter your data and model in `conf/config.yaml`
-        - Client:
-            - Configure settings in `conf/config.yaml` for task ID, data, and WandB information.
-            - Implement data_preparation.py for data handling.
-            - Build `models.py` for local model specifications.
-            - Register data and model, and run the client using `client_main.py`.
-        - Server:
-            - Configure settings in `conf/config.yaml` for FL/Aggregation hyperparameters and data information.
-            - Implement `models.py` to initialize the global model.
-            - Register data (for evaluating the global model) and initialize the global model in `server_main.py`.
-            - XAI view ( Under development)
-    2. ***Create your Git repository and add FL server code.***
-        - Set up your own Git repository and add the FL server code (`server_main.py, models.py, data_preparation.py, requirementst.txt, conf/config.yaml`).
-        - This code will be used to deploy and run the FL server in CCL k8s environment.
-    3. ***Create FL task on FedOps web interface.***
-        - Use the FedOps web interface to create your FL task.
-        - Specify the Git repository address for your FL server code.
-        - Refer [FedOps Silo Guide](https://gachon-cclab.github.io/docs/user-guide/silo-guide/)
-    4. ***Run the clients.***
-        - Run `client_main.py` and `client_manager_main.py`
-        - Or choose either [Docker or shell(localhost)](https://github.com/gachon-CCLab/FedOps/tree/main/silo/examples/torch/docker-mnist) to run the clients.
-        - XAI view
-            
-            After running the client program with the XAI feature enabled, Grad-CAM interpretability heatmaps are automatically generated and saved to the specified output directory.
-            
-            By default, the output path is the **`outputs/`** folder located in the project root.
-            
-            The generated files are usually named**`gradcam_output.jpg`**, with each image corresponding to one interpretability analysis result.
-            
-            then the heatmap images will be saved under the **`./outputs/xai/`** directory.
-            
-            You can open them from the file manager by navigating to the `outputs` folder.
-            
-            Each experiment run will create new Grad-CAM images in a corresponding date or round subdirectory, allowing you to analyze which regions the model focuses on for different samples.
-            
-    5. ***Initiate the FL task.***
-        - Select the desired clients on the FedOps web interface and initiate the FL task by clicking the "FL start" button.
-    6. ***Monitor and manage the FL task***
-        - Monitor the performance of local and global models, and manage/download the global model as the FL task administrator through the FedOps web interface.
-    7. ***Monitor data and local model performance***
-        - Monitor the health of data and local model performance as the device administrator through the designated WandB.

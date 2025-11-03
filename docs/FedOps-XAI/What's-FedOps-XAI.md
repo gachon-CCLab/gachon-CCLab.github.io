@@ -8,7 +8,25 @@ parent: FedOps XAI
 overview:
     
    Each FedOps client not only trains locally but also generates interpretable Grad-CAM visualizations to verify that the local model is learning meaningful spatial features before contributing updates to the global model.
+
+    1. Grad-CAM Generation (XAI Module)
     
+    If `xai.enabled: true` and `xai.run_location: client` are set in the configuration, the client will:
+    
+    - Perform **forward** and **backward** passes on local validation samples.
+    - Extract gradients and feature maps from the **target explanation layer** (e.g., `conv2`).
+    - Compute **Grad-CAM weights** and overlay the resulting heatmap onto the original image.
+    - Save the visualized results to the directory: `outputs/gradcam/`.
+    
+    
+    2. Local Explainability Evaluation
+    
+    These heatmaps help to evaluate:
+    
+    - Whether the model is focusing on the **actual stroke regions** of digits (indicating correct learning).
+    - Whether there are **biased or noisy attention areas**, which could signal overfitting or abnormal local data.
+    
+
 - What's new here?
     
     New XAI Feature Description
