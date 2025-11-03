@@ -29,7 +29,7 @@ In summary:
     ```
     
     - During the client evaluation stage (`client_main.py → evaluate()`), the system automatically generates and saves Grad-CAM heatmaps.
-    - The generated Grad-CAM images can be viewed locally under `outputs/xai/` or logged to **Weights & Biases (W&B)** for visualization and tracking.
+    - The generated Grad-CAM images can be viewed locally under `outputs/xai/` for visualization and tracking.
     
     Added: XAI Grad-CAM Module
     
