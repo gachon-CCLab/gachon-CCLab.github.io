@@ -4,7 +4,7 @@ title: What is FedOps Fitbit Health Pipeline?
 nav_order: 1
 parent: FedOps Fitbit Health Pipeline
 ---
-## ✅ What is FedOps Fitbit Health Pipeline?
+# ✅ What is FedOps Fitbit Health Pipeline?
 <br />
 
 By applying temporal windowing to **Fitbit Health device data** (including steps, heart rate, calories, and sleep duration) and integrating it with the FedOps federated learning framework, the system enables collaborative training of an **LSTM-based** **sleep quality prediction model** across multiple devices while preserving data privacy, thus achieving automated model operations.
