@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to use FedMap
-nav_order: 1
+nav_order: 2
 parent: FedOps Aggregation method
 ---
 - How to run this method in your environment?

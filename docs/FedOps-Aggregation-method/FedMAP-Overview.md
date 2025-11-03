@@ -1,3 +1,10 @@
+---
+layout: default
+title: FedMAP Overview
+nav_order: 1
+parent: FedOps Aggregation method
+---
+
 ## 🎯 Overview
 
 Federated Averaging (FedAvg) is the de facto baseline in FL, but it **fails under non-IID, imbalanced, and multimodal data distributions**.
