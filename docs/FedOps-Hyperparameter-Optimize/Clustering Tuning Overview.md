@@ -19,9 +19,6 @@ To address these issues, this guide introduces a method that analyzes the **mode
 
 {: .highlight }
 🔥 Here is steop of Clustering Tuning 
-
-Of course. Here is the English version of the README file.
-
 ---
 
 # Fed-CO: Clustered Hyperparameter Optimization Framework for Federated Learning
@@ -39,8 +36,6 @@ The core idea is to group clients exhibiting similar learning behaviors using **
 
 ## 🚀 Overall Workflow
 
-![image.png](../../img/How-to-use-clustering/image(7).png)
-
 The process consists of 4 main steps.
 
 ### 1. Client Clustering
@@ -52,11 +47,13 @@ Clustering is performed by the 'Clustering Engine' on the server.
 
 #### Clustering Features (Input Features)
 
-The input features $x_i$ used for clustering are as follows:
+The input features used for clustering are as follows:
 
-$$
+### Clustering Feature Vector
+
+```math
 \mathbf{x}_i = [\log_{10}(lr_i), \log_{2}(bs_i), \mathcal{l}_i]
-$$
+```
 
 * $lr_i$: Learning Rate of client $i$
 * $bs_i$: Batch Size of client $i$
@@ -87,14 +84,14 @@ Once cluster assignment is complete, clients proceed with local training.
 
 After completing local training, each client transmits **two types of information** to *different modules* on the server.
 
-#### a. Model Update ($ \Delta W $, $n$)
+#### a. Model Update
 * **Destination:** **Global Aggregation Engine**
-* **Content:** The change in weights ($\Delta W$) and the number of samples ($n$) obtained from local training.
+* **Content:** The change in weights (model update) and the number of samples obtained from local training.
 * **Purpose:** The server collects updates from *all* clients—**regardless of their cluster membership**—and uses the FedAvg algorithm to update a **single global model**.
 
-#### b. Training Feedback ($ Loss $, $ HPs $)
+#### b. Training Feedback
 * **Destination:** The client's corresponding **Cluster Module**
-* **Content:** The resulting loss value ($Loss$) and the hyperparameters ($HPs$) used during local training.
+* **Content:** The resulting loss value and the hyperparameters used during local training.
 * **Purpose:** This feedback is used to update the cluster-specific Optuna Study for subsequent optimization and clustering.
 
 ---
@@ -103,7 +100,7 @@ After completing local training, each client transmits **two types of informatio
 
 Each 'Cluster Module' that receives training feedback from its clients updates the dedicated Optuna Study for that cluster.
 
-1.  **Metrics Collection:** Collects the reported $Loss$ values and $HPs$ feedback from the clients within the cluster.
+1.  **Metrics Collection:** Collects the reported loss values and hyperparameter feedback from the clients within the cluster.
 2.  **Optuna Update:** Accumulates and integrates the collected performance feedback into the ongoing Study using the `Study.tell()` function.
 3.  **Progressive Refinement:** As this process repeats over successive rounds, each cluster's Optuna Study progressively refines its search distribution toward a hyperparameter space that is increasingly well-suited to the data characteristics of the clients within that cluster.
 
@@ -115,15 +112,15 @@ Each 'Cluster Module' that receives training feedback from its clients updates t
 
 Each 'Cluster Study' follows a clear `ask-tell` loop:
 
-* **Hyperparameter Proposal (Ask):** For each cluster $C_k$, the corresponding Optuna Study $S_k$ calls `S_k.ask()` to propose an optimized set of hyperparameters for its member clients $i$.
-* **Local Training (Train):** The client performs local training using the proposed hyperparameters and the global model $ \theta(t) $, returning the resulting local model $\theta_i$ and the corresponding loss value $L_i$.
-* **Performance Feedback (Tell):** The server reports the returned loss $L_i$ back to the shared Cluster Study $S_k$ using the `S_k.tell()` function. As this feedback accumulates, the Study progressively refines its optimization process.
+* **Hyperparameter Proposal (Ask):** For each cluster, the corresponding Optuna Study calls `Study.ask()` to propose an optimized set of hyperparameters for its member clients.
+* **Local Training (Train):** The client performs local training using the proposed hyperparameters and the global model, returning the resulting local model and the corresponding loss value.
+* **Performance Feedback (Tell):** The server reports the returned loss back to the shared Cluster Study using the `Study.tell()` function. As this feedback accumulates, the Study progressively refines its optimization process.
 
 ### 2. Dynamic Clustering and Noise Handling
 
 The clustering process operates dynamically in conjunction with the federated learning loop.
 
-* **Periodic Execution:** Clustering is not performed in every round but is executed periodically with a cooldown interval ($\tau$). This design allows sufficient time in the early rounds to reliably accumulate client feature data $X$.
-* **Feature Preprocessing:** Before running DBSCAN, the collected feature set $X$ undergoes log transformation and standardization.
-* **Noise Promotion:** Any client $i$ assigned a label of –1 after DBSCAN execution is immediately promoted to an independent cluster and connected to a separate Cluster Study for isolated optimization.
+* **Periodic Execution:** Clustering is not performed in every round but is executed periodically with a cooldown interval. This design allows sufficient time in the early rounds to reliably accumulate client feature data.
+* **Feature Preprocessing:** Before running DBSCAN, the collected feature set undergoes log transformation and standardization.
+* **Noise Promotion:** Any client assigned a label of –1 after DBSCAN execution is immediately promoted to an independent cluster and connected to a separate Cluster Study for isolated optimization.
 * **New Study Creation:** If a newly formed cluster (including promoted noise clients) does not already have an associated Optuna Study, a new one is automatically created for it.
