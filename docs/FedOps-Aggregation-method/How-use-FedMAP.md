@@ -4,9 +4,12 @@ title: How to use FedMap
 nav_order: 2
 parent: FedOps Aggregation method
 ---
-- How to run this method in your environment?
+# 📝 FedOps FedMap Guide
+<br />
+{: .highlight }
+How to run this method in your environment?
     
-    Following is a usecase which utilized this method (FedMAP) with Facebook AI’s hateful memes multimodal dataset.
+Following is a usecase which utilized this method (FedMAP) with Facebook AI’s hateful memes multimodal dataset.
     
 ## Baseline Project Structure
 
