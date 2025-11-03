@@ -61,19 +61,19 @@ pip install fedops
 
 We extend our sincere gratitude to the dedicated team at **Gachon Cognitive Computing Lab** who made this release possible:
 
-- Yong-Gyom Kim
-- InSeo Song
-- JingYao Shi
-- Ri-Ra Kang
-- Akeel Ahamed
-- MinHyuk
-- JinYong
-- Advised by Prof. KangYoon Lee
+- Yong-gyom Kim ([gyom1204@gachon.ac.kr](mailto:gyom1204@gachon.ac.kr))
+- InSeo Song (z8086486@gachon.ac.kr)
+- JingYao Shi (11490800573@gachon.ac.kr)
+- Ri-Ra Kang (rirakang@gachon.ac.kr)
+- Akeel (akeelahamed@gachon.ac.kr)
+- MinHyuk Jung(bvnm0121@gachon.ac.kr)
+- JinYong Jung ([wlsdyd5373@gachon.ac.kr](mailto:wlsdyd5373@gachon.ac.kr))
+- Advised by Prof. KangYoon Lee (keylee@gachon.ac.kr)
 
 ***Explore the new features and documentation on our website*** 
 
-***( link:***https://ccl.gachon.ac.kr/fedops***).***
+***( link:***[https://ccl.gachon.ac.kr/fedops](https://ccl.gachon.ac.kr/fedops)***).***
 
 ***Join the Discussion: Connect with the community on our Slack channel***
 
-***(link:***https://fedopshq.slack.com/join/shared_invite/zt-3h73abys7-ms07FlAVG7EP2108BzevcA#/shared-invite/email***).***
+***(link:***[https://fedopshq.slack.com/join/shared_invite/zt-3h73abys7-ms07FlAVG7EP2108BzevcA#/shared-invite/email](https://fedopshq.slack.com/join/shared_invite/zt-3h73abys7-ms07FlAVG7EP2108BzevcA#/shared-invite/email)***).***
