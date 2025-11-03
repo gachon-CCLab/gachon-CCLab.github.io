@@ -47,7 +47,7 @@ git checkout main
 
 cd multimodal/Usecases/Facebook_AI_benchmark
 
-pip install fedops==1.1.30.4
+pip install fedops
 
 ```
 
@@ -1131,5 +1131,5 @@ Use the following tabs to track progress:
 ### After Successfully finishing FL rounds, don’t forget to execute below command again in your local client side . (Reason: since we modified client/app.py and client/client_fl.py for this setup. By doing pip install again it will bring those two files into original code )
 
 ```python
-pip install fedops==1.1.30.4
+pip install fedops
 ```
