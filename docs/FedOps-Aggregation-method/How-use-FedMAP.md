@@ -6,6 +6,7 @@ parent: FedOps Aggregation method
 ---
 # 📝 FedOps FedMap Guide
 <br />
+
 {: .highlight }
 How to run this method in your environment?
     
