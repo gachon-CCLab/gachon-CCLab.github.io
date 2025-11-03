@@ -1,9 +1,9 @@
 ---
 layout: default
-title: FedOps Hyperparameter Optimize
+title: FedOps Clustering Tuning
 nav_order: 8
 has_children: true
-permalink: docs/FedOps-Hyperparameter-Optimize
+permalink: docs/FedOps-Clustering-Tuning
 ---
 
-What is FedOps Hyperparameter Optimize?
+What is FedOps Clustering Tuning?
