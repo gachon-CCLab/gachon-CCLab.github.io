@@ -63,7 +63,7 @@ We extend our sincere gratitude to the dedicated team at **Gachon Cognitive Comp
 
 - Yong-gyom Kim ([gyom1204@gachon.ac.kr](mailto:gyom1204@gachon.ac.kr))
 - InSeo Song ([z8086486@gachon.ac.kr](mailto:z8086486@gachon.ac.kr))
-- JingYao Shi ([11490800573@gachon.ac.kr](mailto:11490800573@gachon.ac.kr))
+- JingYao Shi ([11490800573@gachon.ac.kr](mailto:qq490800573@gachon.ac.kr))
 - Ri-Ra Kang ([rirakang@gachon.ac.kr](mailto:rirakang@gachon.ac.kr))
 - Akeel ([akeelahamed@gachon.ac.kr](mailto:akeelahamed@gachon.ac.kr))
 - MinHyuk Jung([bvnm0121@gachon.ac.kr](mailto:bvnm0121@gachon.ac.kr))
