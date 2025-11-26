@@ -29,8 +29,9 @@ First，Start by cloning the FedOps（Place it cloning in the local location）
 
 ```
 git clone https://github.com/gachon-CCLab/FedOps.git \
-&& mv FedOps/silo/examples/torch/EMEDY . \
+&& mv "FedOps/silo/examples/torch/Wearable(FitBit)" . \
 && rm -rf FedOps
+
 ```
 
 1. Create Task: The task name is required (e.g., **emdtest**). Since this instance belongs to a general machine learning or deep learning task, select **AI**. Keep all subsequent options as default, and finally, choose **FedAvg** as the federated aggregation strategy.
