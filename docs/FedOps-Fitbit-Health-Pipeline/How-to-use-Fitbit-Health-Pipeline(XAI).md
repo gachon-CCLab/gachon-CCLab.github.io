@@ -126,14 +126,27 @@ git clone https://github.com/gachon-CCLab/FedOps.git \
     
 5. The monitoring page can confirm the global results
     ![image.png](../../img/How-to-use-Fitbit-Health-Pipeline(XAI)/image(10).png)
+
+   
 6. XAI result
+
+
    ![image.png](../../img/How-to-use-Fitbit-Health-Pipeline(XAI)/image(11).png)
+
+
    Two interpretability methods, Integrated Gradients (IG) and LIME (Local Interpretable Model-agnostic Explanations),   were applied to explain the feature importance distribution of the federated wearable device model in short-term psychological state prediction tasks. The input features include Steps, Calories, Average Heart Rate (AvgHR), and Stress.
 
   (a) **Integrated Gradients (IG)**
+  
   ![image.png](../../img/How-to-use-Fitbit-Health-Pipeline(XAI)/image(12).png)
+  
+  
   (b) **LIME (Local Interpretable Model-agnostic Explanations)**
+  
   ![image.png](../../img/How-to-use-Fitbit-Health-Pipeline(XAI)/image(13).png)
+
+
+  
   | Interpretation Method | Strength | Finding | Conclusion |
 | --- | --- | --- | --- |
 | **Integrated Gradients (IG)** | Captures global gradient distribution | Highlights Stress and AvgHR features in the 3–4 h interval | The model globally focuses on physiological stress evolution |
