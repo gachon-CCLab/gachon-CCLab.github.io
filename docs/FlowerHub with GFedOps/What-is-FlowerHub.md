@@ -7,7 +7,7 @@ nav_order: 1
 # 🎯 What is FlowerHub?
 <br />
 
-![image.png](../../../img/FedOps-Launcher/flowerhub.png)
+![image.png](../../img/FedOps-Launcher/flowerhub.png)
 
 Link: <a href="https://flower.ai/apps/" target="_blank">FlowerHub</a> 
 
