@@ -7,7 +7,7 @@ nav_order: 2
 # 🎯 What is GFedOps?
 <br />
 
-![image.png](../../../img/FedOps-Launcher/gfedops.png)
+![image.png](../../img/FedOps-Launcher/gfedops.png)
 
 Link: <a href="https://flower.ai/profile/gfedops/apps/" target="_blank">GFedOps</a> 
 
