@@ -18,6 +18,8 @@ This guide provides step-by-step instructions for using FedOps Launcher, a FedOp
 
 ### 1. Install Docker 
 
+FedOps Launcher runs as a Docker container. Docker is required to provide an isolated execution environment for the launcher, manage the workspace volume, and run the FL client consistently across different operating systems.
+
 [Docker Download](https://www.docker.com/get-started/)
 
 ![image.png](../../../img/FedOps-Launcher/image(1).png)
@@ -36,7 +38,7 @@ This guide provides step-by-step instructions for using FedOps Launcher, a FedOp
 docker rm -f fedops-launcher 2>/dev/null; docker run -d --name fedops-launcher -p 5600:5600 -e WORKSPACE_DIR=/workspace -v "$HOME/fedops-workspace:/workspace" joseongjin311/fedops-launcher:v1.0.0 && echo "Now Running On: http://127.0.0.1:5600"
 ```
 
-In my case, I use VSCode in a Windows WSL environment.
+The examples in this guide are performed in VSCode within a Linux environment provided by Windows WSL.
 
 Just copy the command and run it in your CLI environment.
 
@@ -118,7 +120,7 @@ If you are logged in, you can choose a Task what you created on FedOps website.
 
 ![image.png](../../../img/FedOps-Launcher/image(12).png)
 
-**"ssj" is my Task name, so you should select your own Task**
+**In this example, "ssj" is the Task name. Select the Task created for your own environment.**
 
 Next, select the FL project to which you want to apply the Task.
 
@@ -134,6 +136,14 @@ All settings are complete. Just click the **Run** button.
 
 ![image.png](../../../img/FedOps-Launcher/image(14).png)
 
+### 7. Stop FedOps Launcher
+
+When you finish using FedOps Launcher, stop and remove the running container with the following command:
+
+```bash
+docker rm -f fedops-launcher
+```
+
 **Thank you.**
 
-**You have successfully started the FedOps Launcher.**
+**You have successfully learned how to use the FedOps Launcher.**
