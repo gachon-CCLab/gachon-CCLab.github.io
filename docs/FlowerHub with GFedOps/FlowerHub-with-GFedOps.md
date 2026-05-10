@@ -1,8 +1,8 @@
 ---
 layout: default
 title: FlowerHub with GFedOps 
-nav_order: 11
+nav_order: 12
 has_children: true
-permalink: docs/FedOps-Launcher
+permalink: docs/FlowerHub-with-GFedOps
 ---
 # FlowerHub with GFedOps
